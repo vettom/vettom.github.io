@@ -19,7 +19,7 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-night
         name: Switch to light mode  
       primary: indigo
       accent: lime
@@ -27,11 +27,14 @@ theme:
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/weather-sunny 
         name: Switch to dark mode
       primary: indigo
       accent: teal
 
+plugins:
+  - blog
+  
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
