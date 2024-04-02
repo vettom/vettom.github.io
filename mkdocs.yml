@@ -49,8 +49,8 @@ plugins:
       authors_file: "{blog}/.authors.yml"
       authors_profiles: true
   - tags
-  - open-in-new-tab
   - search
+  # - open-in-new-tab
 
 markdown_extensions:
   - pymdownx.highlight:
