@@ -1,5 +1,8 @@
 site_name: vettom.github.io
 site_url: https://vettom.github.io
+repo_url: https://github.com/vettom
+repo_name: Vettom
+copyright: Denny Vettom
 theme:
   name: material
   features:
@@ -15,9 +18,12 @@ theme:
     - content.code.annotation
     - content.code.copy
     - content.code.select
+    - navigation.footer
   language: en
   logo: img/dv-tec-logo-round2cm.png
-  favicon: img/favicon.ico
+  favicon: img/favicon.png
+  icon:
+    repo: fontawesome/brands/github
 
   palette: 
     # Palette toggle for light mode
@@ -37,8 +43,15 @@ theme:
       accent: teal
 
 plugins:
-  - blog
+  - blog:
+      enabled: true
+      blog_dir: blog
+      authors_file: "{blog}/.authors.yml"
+      authors_profiles: true
   - tags
+  - open-in-new-tab
+  - search
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -64,5 +77,6 @@ extra:
       link: https://github.com/vettom
     - icon: fontawesome/brands/youtube 
       link: https://www.youtube.com/@vettomd
+  generator: false
 
       

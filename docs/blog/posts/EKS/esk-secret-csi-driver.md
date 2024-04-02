@@ -1,4 +1,15 @@
+---
+draft: false 
+date: 2024-04-02 
+categories:
+  - eks
+  - kubernetes
+  - aws secrets manager
+  - external secrets
+  - secrets as volume
+---
 # EKS secrets as env variable with CSI driver
+![alt text](img/kubernetes-csi.jpg "target group status"){ width="250" }
 
 CSI driver by default configured to mount secrets as file. However it is possible to mount secrets are Environment variable using below method. When the pod is started,
 driver will create a secret and mount as Environment variable. Secrets object only exists while pod is active.
