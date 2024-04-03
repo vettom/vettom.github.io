@@ -50,7 +50,7 @@ plugins:
       authors_profiles: true
   - tags
   - search
-  # - open-in-new-tab
+  - open-in-new-tab
 
 markdown_extensions:
   - pymdownx.highlight:
