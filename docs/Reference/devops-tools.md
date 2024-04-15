@@ -8,6 +8,7 @@
 |[tfsec/trivy](https://github.com/aquasecurity/trivy) | Security scanner tool | [tfk8s](https://github.com/jrhouston/tfk8s)| Convert k8s manifest to terraform HCL format|
 |[tfdoc](https://terraform-docs.io/)| Quick documentation for terraform modules| [oh-my-zsh](https://ohmyz.sh/)| Unleash your terminal|
 |[kube-ps1](https://github.com/jonmosco/kube-ps1)| Get k8s context as prompt|[mkdocs](https://www.mkdocs.org/)| Product documentation from markup |
+|[Iam to TF HCL](https://flosell.github.io/iam-policy-json-to-terraform/)|Iam policy for TF hcl data|||
 
 ## Networking
 [Visual subnet splitter](https://www.fryguy.net/wp-content/tools/subnets.html)
