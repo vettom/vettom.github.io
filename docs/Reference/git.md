@@ -1,6 +1,6 @@
 # Git
 
-## Tags
+## Tags create/delete
 
 ```bash
 # Create new tag
@@ -32,7 +32,7 @@ git push --force origin main
 
 ```
 
-## Git config
+## Git config updates
 ```bash
 # Get all configuration values
 git config -l
