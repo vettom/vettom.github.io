@@ -1,8 +1,8 @@
 {
-    "error": "",
-    "result": [
-      "https://google.co.uk",
-      "doesnotexist.com",
-      "intel.com",
-    ]
+  "error": "",
+  "result": [
+    "https://google.co.uk",
+    "thisshouldfail.com",
+    "gitlab.com"
+  ]
 }
