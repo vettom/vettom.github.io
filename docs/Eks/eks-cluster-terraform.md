@@ -2,9 +2,9 @@
 
 Getting started with creating a functional EKS cluster from scratch can be challenging as requires some specific settings. While EKS module will create a new cluster, it does not address how you will expose an applicaiton, tags required for subnets, number of pod IP addresses etc
 
-:desktop_computer:  [EKS cluster using terraform](https://github.com/vettom/aws-eks-terraform/tree/main/00-EKS-Cluster) contains everything required for you to spin up a new cluster and expose application via Application Loadbalancer. All you need to do is apply terraform code
+:desktop_computer:  [EKS cluster using terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB) contains everything required for you to spin up a new cluster and expose application via Application Loadbalancer. All you need to do is apply terraform code
 
-[Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/00-EKS-Cluster), [Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/Sample-app)
+[Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB), [Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/Sample-app)
 
 - [x] VPC with 2  privat and 2 public zones
 - [x] EKS cluster with Managed NodeGroup (1 Node)
