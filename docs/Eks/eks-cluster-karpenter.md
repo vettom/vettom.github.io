@@ -17,7 +17,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 
 ## Instructions
 > :warning: If cluster endpoint not updated, Karpenter nodes will not join cluster
-```bash
+```sh
 terrafor init -upgrade ; terraform apply
 # Update cluster endpoint in Karpenter-app/karpenter-values.yaml file
 "clusterEndpoint: https://11111111111.gr7.eu-west-1.eks.amazonaws.com"
