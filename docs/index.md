@@ -1,10 +1,14 @@
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EAz6ap4pm6Y?si=IFt0DzUjjMvpQviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Karpenter Autoscaling configuration
+<iframe width="560" height="315" src="https://www.youtube.com/embed/INGAmV8SRu0?si=viH9pDXdD4fefbeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 | Blogs ||
 |-------------------------| -------------------------|
+|[Karpenter autoscaling configuration with EKS cluster ](https://vettom.github.io/Eks/eks-cluster-karpenter/)|
+|[Comple EKS Cluster build with terraform](https://vettom.github.io/Eks/eks-cluster-terraform/)|
 |[How to mount secrets as env variables using CSI Driver](http://vettom.github.io/blog/2024/04/02/eks-secrets-as-env-variable-with-csi-driver/)|
 |[EKS configuring ALB to avoid errors and timeouts during deployment](https://vettom.github.io/blog/2024/03/28/eks-avoid-errors-and-timeout-during-deployment-alb/)|
+
 
 ### My Public Repos 
 

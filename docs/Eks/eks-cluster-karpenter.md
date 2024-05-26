@@ -9,6 +9,8 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 [Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter)
 [Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter/Sample-App)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/INGAmV8SRu0?si=viH9pDXdD4fefbeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### Contains following: 
 - VPC with 2  privat and 2 public zones
 - EKS cluster with Managed NodeGroup (1 Node)
