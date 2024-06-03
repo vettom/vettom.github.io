@@ -10,9 +10,10 @@ If Ingress-NGIX is configured without LB controller, it will provision LB with t
 
 |Advantages of Ingress-Ngix over ALB conroller?|
 |-------------------------|
-|Services can be configured using Cluster IP making it more secure | 
-|Traffic roted direct to pod and its port|
-| Ingress metrics available in cluster|
+|Services can be configured using Cluster IP, not exposing in local network | 
+|Traffic routed direct to pod and its port from Ingress controller|
+| Ingress metrics (prometheus) available with in cluster|
+| No IAM permissions requirement (LB controller requires IAM) |
 | Certificate manager can be used for SSL certs|
 
 ## Resources
