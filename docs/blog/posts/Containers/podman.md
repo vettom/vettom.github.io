@@ -18,7 +18,7 @@ categories:
     - Secure : Rootless container allow to contain privileges
     - Compatible : Supports OCI compliant containers including Docker
 
-### Install Podman 
+#### Install Podman 
 ```bash
 brew install podman
 # On Mac, each Podman machine is backed by a virtual machine
@@ -27,7 +27,7 @@ podman machine init
 podman machine start
 podman info
 ```
-### Simple Flask app
+#### Simple Flask app
 ```python
 from flask import Flask
 app = Flask(__name__)
@@ -37,7 +37,7 @@ def hello():
 if __name__ == '__main__':
     app.run()
 ```
-### Prepare Docker file
+#### Prepare Docker file
 You can use most Docker commands with podman. 
 ```dockerfile
 FROM python:3.10-slim
@@ -47,7 +47,7 @@ RUN pip install --trusted-host pypi.python.org Flask
 EXPOSE 5000
 CMD ["flask", "run", "--host=0.0.0.0"]
 ```
-### Build and run pod
+#### Build and run pod
 ```bash
 # Build image from FLask App
 podman build -t myflask:latest .
