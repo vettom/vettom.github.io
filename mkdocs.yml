@@ -46,6 +46,7 @@ plugins:
   - blog:
       enabled: true
       blog_dir: blog
+      blog_toc: true
       authors_file: "{blog}/.authors.yml"
       authors_profiles: true
   - tags

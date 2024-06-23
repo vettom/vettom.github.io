@@ -7,7 +7,6 @@ categories:
   - docker desktop
   - docker
 ---
-## Dockerfile references
 | Commands | Descreption | 
 | ------------- | ------------- |
 |COPY  | Copy files in to the image|
@@ -20,7 +19,7 @@ categories:
 |FROM|Define base image from which image is built. This is first instruction.|
 |WORKDIR |Working Directory of container|
 
-## Difference between CMD and ENTRYPOINT
+### Difference between CMD and ENTRYPOINT
 Both Entry point and CMD execute instructions at start of container, however behaviour differ. 
 CMD : When only CMD is specified, it executes command and will ignore any parameters passed. 
 ENTRYPOINT: Defines command to execute at start, then inputs are passed as arguments. If CMD also specified,  ENTRYPOINT will treat CMD as arguments than commands.
