@@ -2,12 +2,15 @@
 
 Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler
 
-:desktop_computer:  [EKS with Karpenter](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter) contains everything required for you to spin up a new cluster and configure Karpenter autoscaling
+- Cost effective ( Provisions most cost effective instances including SPOT instance)
+- Fast auto scaling (Less than 2min)
+- Resource consolidation (Reduce number of nodes by organising pod spread when spare capacity available)
+- Regular node recycle (Reprovision nodes at set interval to provision them on upto date hardware.)
 
-> :information_source: EKS API Authentication mode in use. 
+> :information_source: EKS API Authentication mode is used while creating EKS cluster. 
 
-[Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter)
-[Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter/Sample-App)
+- [Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter)
+- [Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter/Sample-App)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/INGAmV8SRu0?si=viH9pDXdD4fefbeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
