@@ -1,6 +1,8 @@
 # Gateway API (Envoy) with EKS network loadbalancer
 [Gateway API](https://gateway-api.sigs.k8s.io/) is the next generation of Kubernetes Ingress, Load Balancing, and Service Mesh APIs. In this document I will focus on Ingress traffic [North/south](https://gateway-api.sigs.k8s.io/concepts/glossary/#northsouth-traffic) traffic implementation using [Envoy Gateway Fabric](https://gateway.envoyproxy.io/).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pMNWyL7S-R0?si=1uYgVuE0UPIqGku6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 **Gateway API resources**
 
 - GatewayClass : Defines type of Gateway (internal/external), custom setting specific to Cloud provider and implementation software
