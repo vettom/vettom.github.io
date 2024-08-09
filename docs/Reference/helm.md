@@ -1,5 +1,14 @@
 # Helm
 
+## ECR Repo
+```bash
+# Authenticate with ECR public repo
+aws ecr-public get-login-password \
+     --region us-east-1 | helm registry login \
+     --username AWS \
+     --password-stdin public.ecr.aws
+
+```
 ## Repo commands
 ```bash
 # Add eks repo to local
