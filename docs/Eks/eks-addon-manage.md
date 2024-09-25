@@ -6,14 +6,14 @@ There are additional addons provided by vendors as well
 ### List all addons and latest version for specific k8s version
 Following command will list all addons and their latest version for kubernetes 1.30
 ```bash
-aws eks describe-addon-versions --profile $PROFILE \
+aws eks describe-addon-versions \
     --kubernetes-version=1.30 \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
 ### Get latest version for specific addon
 This command will return latest version of addon available for k8s version provided
 ```bash
-aws eks describe-addon-versions --profile $PROFILE \
+aws eks describe-addon-versions \
     --kubernetes-version=1.30 \
     --addon-name=vpc-cni \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
@@ -21,7 +21,7 @@ aws eks describe-addon-versions --profile $PROFILE \
 ### Get all versions of specific addon for k8s version
 Sometimes you may not want latest version and find out all avilable versions for an addon
 ```bash
-aws eks describe-addon-versions --profile $PROFILE \
+aws eks describe-addon-versions  \
     --kubernetes-version=1.30 \
     --addon-name=vpc-cni \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[].addonVersion }'
@@ -29,13 +29,13 @@ aws eks describe-addon-versions --profile $PROFILE \
 ### Get list of all available addons
 Simple list of all awailable addons
 ```bash
-aws eks describe-addon-versions --profile $PROFILE \
+aws eks describe-addon-versions \
     --kubernetes-version=1.30 \
     --query 'sort_by(addons  &addonName)[].{addonName: addonName}' | grep addonName | awk -F: '{ print $2}'
 ```
 ### List all addons provided by AWS and latest version
 ```bash
-aws eks describe-addon-versions --profile $PROFILE \
+aws eks describe-addon-versions  \
     --kubernetes-version=1.30  --owner=aws \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
@@ -46,5 +46,5 @@ aws eks --profile $PROFILE describe-addon-configuration --addon-name vpc-cni --a
 ```
 ### List addons installed on your cluster
 ```bash
-aws eks --profile $PROFILE list-addons --cluster-name uk-as-dev-cluster1
+aws eks --profile $PROFILE list-addons --cluster-name cluster1
 ```

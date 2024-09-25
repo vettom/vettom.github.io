@@ -28,3 +28,13 @@ This is an error from CloudFlare provider. It seems they have to enable/allow te
 
 - Raise support ticket with Cloudflare to allow terrafor Partial Zone creation
 - Ensure you are using `Global API Key` for authentication
+- Must have `Enterprise` plan, not available for other plans
+
+```terraform
+resource "cloudflare_zone" "zone" {
+  account_id = var.accountid
+  zone       = var.domain
+  type       = "partial"
+  plan       = "enterprise"
+}
+```

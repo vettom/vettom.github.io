@@ -1,4 +1,6 @@
-# Hierarchy
+# GCP fundamentals
+
+## Hierarchy
 
 4 Levels of Hierarchy.
 Organization node
@@ -39,3 +41,22 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 ### Custom roles
 - Manage by self
 - Can be assigned at Project or Org level only, not folder level.
+
+
+# Cloud Identity
+Manage users and groups centrally via google Admin console
+Integrates with Existing AD services
+
+# VPC
+VPC is global and subnets are regional. Subnets  can span zones to cover region. Multiple VPC's can be created with in a project.  
+- Routing tables are build-in
+- Distributed firewall comes with it
+- Firewall based on tags
+
+## Network connection
+- Cloud VPN 
+- Direct peering. 
+- career peering (via service provider)
+- Dedicated interconnect
+- Partner interconnect
+- Cross cloud interconnect. 
