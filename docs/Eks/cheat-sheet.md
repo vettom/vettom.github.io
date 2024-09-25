@@ -7,9 +7,6 @@ aws eks --profile $PROFILE  --region eu-west-2 update-kubeconfig --name $CLUSTER
 
 ### Addons
 ```bash
-# Add-on verion 
-aws eks --profile $PROFILE describe-addon-versions --addon-name aws-ebs-csi-driver
-
 # Get latest version for specific add on for specific K8s version
 aws eks describe-addon-versions --profile $PROFILE \
     --kubernetes-version=1.30 \
@@ -21,13 +18,11 @@ aws eks --profile $PROFILE describe-addon-versions  \
 	--kubernetes-version=1.30 \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 
-# List all addons for k8s version and latest version
-aws eks --profile $PROFILE describe-addon-versions  \
-	--kubernetes-version=1.30 \
-	--query 'sort_by(addons  &addonName)[].{addonName: addonName, Version: addonVersions[0].addonVersion }'
+# Get available configurations for specific addon
+aws eks --profile $PROFILE describe-addon-configuration --addon-name vpc-cni --addon-version v1.15.5-eksbuild.1 --output yaml
 
-# Get  format for addon
-aws eks --profile $PROFILE describe-addon-configuration --addon-name vpc-cni --addon-version v1.15.5-eksbuild.1 --output text 
+# List addons installed on your cluster
+aws eks --profile $PROFILE list-addons --cluster-name uk-as-dev-cluster1
 ```
 
 ### Service account
