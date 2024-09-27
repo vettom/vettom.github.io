@@ -1,6 +1,6 @@
-# GCP fundamentals
+# IAM
 
-## Hierarchy
+## Org Hierarchy
 
 4 Levels of Hierarchy.
 Organization node
@@ -25,6 +25,21 @@ Folders can contain Folders or projects. Resource policies can be applied at Fol
 - Project creator
 Google workspace customers projects will automatically belong to Org nodes. Others can create Org ID using Cloud Identity service 
 
+### Creating and managing Org with IAM
+- Super admin : Creates Org admin, and owns lifecycle of Org account
+- Org Admin : Defines IAM roles and policies. Define structure and hierarchy.
+
+## Resource manager Roles
+- Organization
+  - Admin : full control over all resources
+  - Viewer 
+- Folder
+  - Admin
+  - Creator : Create folders and view structure
+  - Viewer
+- Project
+  - Creator:
+  - Deleter:
 
 # IAM
 - Who : Google account, group, service account, Cloud Identity domain. Also called Principle.
@@ -47,16 +62,3 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 Manage users and groups centrally via google Admin console
 Integrates with Existing AD services
 
-# VPC
-VPC is global and subnets are regional. Subnets  can span zones to cover region. Multiple VPC's can be created with in a project.  
-- Routing tables are build-in
-- Distributed firewall comes with it
-- Firewall based on tags
-
-## Network connection
-- Cloud VPN 
-- Direct peering. 
-- career peering (via service provider)
-- Dedicated interconnect
-- Partner interconnect
-- Cross cloud interconnect. 
