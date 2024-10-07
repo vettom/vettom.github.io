@@ -1,9 +1,10 @@
-# Storage
+# DB and Storage
 
 ## Cloud Storage
 Object storage bucket. Any amount of data and retrieve any numer of time. 
 Storing BLOB is ideal.  Data stored is immutable, only new version or overwrite.
 Allows versioning. 
+Cached at edge location by default
 Access can be manged by IAM and ACL
 Lifecycle management policies to manage data, like removing old, controlling number of versions etc
 Directory sync enables VM directory sync
@@ -28,6 +29,10 @@ Fully managed Mysql, postgress SQL or SQL server
 - data encrypted 
 - Includes Network firewall
 
+## Cloud Datastore
+- NoSQL with index and queries (dynamodb)
+- 
+
 ## Alloy DB
 A faster SQL compatible DB managed by google.
 
@@ -37,6 +42,22 @@ SQL compatible Relational database.
 - Very consistent
 - SQL compatible
 - High IP operations 
+- High cost
+
+## Big query
+- Serverless column store for datawarehouse using SQL
+- Fast scaling TB in seconds
+- Query results are cached and free
+
+## Bigtable
+No SQL Bigdata DB service. Handles huge data volumes with low latency
+Ideal for Operational and analytical applications 
+Ideal if
+- more than 1 TB data
+- Data is fast throughput, or rapidly changing.
+- Time series or data with semantic ordering
+- Realtime processing of large data
+- Machine learning algorithm
 
 ## Firestore
 No SQL database for mobile, web, IoT services.  Data is stored in `documents` and organized in to `collections`. 
@@ -46,15 +67,6 @@ Data is cached and get updated when device is online.
 Billing based on storage, queries, documents read
 ACID transaction. Ensure entire transaction consistency
 
-## Bigtable
-No SQL Bigdata DB service. Handles huge data volumes with lo latency
-Ideal for Operational and analytical applications 
-Ideal if
-- more than 1 TB data
-- Data is fast throughput, or rapidly changing.
-- Time series or data with semantic ordering
-- Realtime processing of large data
-- Machine learning algorithm
 
 ## Memory store (Redis)
 - Managed redis

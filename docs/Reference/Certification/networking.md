@@ -13,3 +13,21 @@ VPC is global and subnets are regional. Subnets  can span zones to cover region.
 - Dedicated interconnect
 - Partner interconnect
 - Cross cloud interconnect. 
+
+## Cloud VPN
+Connect On-prem to GCP.  
+## HA VPN
+Higher availability. Must create redundant channel.
+
+## Cloud Interconnects
+Dedicated interconnect
+Partner interconnect
+Cross Cloud interconnect 
+VPN tunnel over internet
+Direct peering : On-prem to googl service.  No SLA
+
+## CDN Interconnect
+- Connect to external CDN provider
+
+## Shared VPC
+Allows sharing for VPC network with one or more VPC's. One VPC will act as host VPC and service project vpc.
