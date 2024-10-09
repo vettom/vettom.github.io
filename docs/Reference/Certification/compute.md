@@ -30,3 +30,9 @@ Like Lambda, limited number of languages. Ideal for reactive/event driven apps.
 ## App engine
 Managed code runtime. Can build complete app stack like DB. Support for more languages. OR can use app engin flexible to containarise unsupported languages.
 
+## OS Login
+- OS login lets you control access to VM using IAM permission. Also possible to enable 2FA with OS login. 
+- OS login can be enabled on instance by adding Metadata `enable-oslogin=true` to instance
+- To enable for all instances, enable it in project metadata.
+- compute.osLogin or osLoginAdmin role can be assigned. 
+- osLoginExternalUser to allow connection from different Org.

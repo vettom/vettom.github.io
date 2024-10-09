@@ -75,6 +75,8 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
   - No downloading of keys
   - Google manages rotation of keys daily
 
+When role assigned to SA, it is considered `asIdentity`. However when user given permission to access SA it is treated as `resource`
+
 ## Cloud IAP
 - Guards apps running on GCP via identity verification
 

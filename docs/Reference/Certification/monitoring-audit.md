@@ -15,8 +15,8 @@ Latency from resources like App engine, LB or apps instrumented with
 ## Profiler
 Analyze CPU, memory intensive  processes
 
-## Audit logs
-- API Calls    : Data access Audit logs(user access). Disabled by default due to size except for BigQuery.
-- System event : By systems, not users. Records all Cloud resource activities. Cannot be disabled.
-- Admin activity : Enabled by default and cannot disable.
- 
+## Types of Audit logs 
+- Admin Activity  : Always on, record API calls activity that modify metadata or configuration of resource.  
+- Data Access     : API calls that reads metadata or configuration, alsouser driven API calls that manage user-provided resource data. Data access logging disabled except for BigQuery by default. Can enable to send data to service other than  BigQuery
+- System Event    : Records Google cloud actions. 
+- Policy denied   : Records when policy denies access to resource. Enabled by default and cannot disable. However can add exclusion filters.

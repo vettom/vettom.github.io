@@ -28,6 +28,8 @@ Fully managed Mysql, postgress SQL or SQL server
 - Automatic replication
 - data encrypted 
 - Includes Network firewall
+- Point in time recovery option.
+- Cross region replica for DR
 
 ## Cloud Datastore
 - NoSQL with index and queries (dynamodb)
@@ -45,13 +47,14 @@ SQL compatible Relational database.
 - High cost
 
 ## Big query
-- Serverless column store for datawarehouse using SQL
-- Fast scaling TB in seconds
-- Query results are cached and free
+Peta-scale data warehouse designed to injest, store, analyze and visualize 
+- SQL compatible
+- Can read from Cloud BigTable
+- 
 
 ## Bigtable
-No SQL Bigdata DB service. Handles huge data volumes with low latency
-Ideal for Operational and analytical applications 
+No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency
+Ideal for Operational and machine learning applications. Data stored in key:value 
 Ideal if
 - more than 1 TB data
 - Data is fast throughput, or rapidly changing.
@@ -79,3 +82,12 @@ ACID transaction. Ensure entire transaction consistency
 | Cloud Spanner  | SQL compatible, horizontal scaling.  |Petabytes  |
 | Firestore  | Massive scaling with real time query. Offline query support  |Petabytes, max object size 1MB |
 | Cloud Bigtable  | Large amount of analytical data. No SQL  |Petabytes  |
+
+
+## Dataproc
+- Managed Hadoop, spark, 
+- Opensource data science
+
+## Dataflow 
+- Streaming analytical data
+- Realtime AI/ML 
