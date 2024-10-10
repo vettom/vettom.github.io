@@ -9,4 +9,6 @@
 
 ```
 
-aws secretsmanager  --profile cadm-prd get-secret-value --secret-id eks/github_token --region eu-west-2  | jq --raw-output '.SecretString' | jq -r .Argocd-RayoAudioBotToken
+### Retrieve k8s secret with plugin
+Install `kubectl-view_secret` plugin using [krew](https://github.com/kubernetes-sigs/krew)
+`kubectl view-secret -n argocd argocd-initial-admin-secreta`
