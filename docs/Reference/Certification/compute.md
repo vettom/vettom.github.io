@@ -36,3 +36,12 @@ Managed code runtime. Can build complete app stack like DB. Support for more lan
 - To enable for all instances, enable it in project metadata.
 - compute.osLogin or osLoginAdmin role can be assigned. 
 - osLoginExternalUser to allow connection from different Org.
+
+## Image
+Image canbe created from
+- disk
+- Image
+- Snapshot
+- Cloud  Storage file
+- virtual disk
+Images can be deleted or deprecated.

@@ -50,7 +50,7 @@ SQL compatible Relational database.
 Peta-scale data warehouse designed to injest, store, analyze and visualize 
 - SQL compatible
 - Can read from Cloud BigTable
-- 
+- Query editor displays estimated amount data used, allowing to understand cost
 
 ## Bigtable
 No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency
@@ -91,3 +91,6 @@ ACID transaction. Ensure entire transaction consistency
 ## Dataflow 
 - Streaming analytical data
 - Realtime AI/ML 
+
+## Pub/sub
+- Must create a topic and  subscription
