@@ -53,7 +53,7 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 - Viewer
 - Billing Administrator
 
-### Pre-defined roles
+### [Pre-defined roles](https://cloud.google.com/iam/docs/understanding-roles)
 - Instance admin : manage instance. 
 - Browser : Project role to list org structure
 - Billing
@@ -99,7 +99,7 @@ serviceAccount Insight can be used to identify SA not used in past 90 days.
 ## Cloud IAP
 - Guards apps running on GCP via identity verification
 
-## [Cloud Audit logs] (https://cloud.google.com/logging/docs/audit)
+#### [Cloud Audit logs] (https://cloud.google.com/logging/docs/audit)
 - Service like CloudTrail
 - Logs cannot be deleted.
 - Admin activity and sys events logs  are kept for 400 days no cost
