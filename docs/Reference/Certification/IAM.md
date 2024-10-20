@@ -55,6 +55,20 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 
 ### Pre-defined roles
 - Instance admin : manage instance. 
+- Browser : Project role to list org structure
+- Billing
+  - costsManager : view analyse and export
+  - user : Can associate billing account and view
+- BigTable
+  - viewer  : No data access
+  - Reader  : Read data
+  - User    : Read write and own data. For users and service accounts.
+- serviceAccount
+  - user : Run operations are SA
+  - TokenCreator  : Allows token creation as SA
+  - SAViewer : Read access to SA meta and keys
+  - workloadIdentityUser : Impersonate service account from federated accounts.
+
 ### Custom roles
 - Manage by self
 - Can be assigned at Project or Org level only, not folder level.
@@ -75,14 +89,24 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
   - No downloading of keys
   - Google manages rotation of keys daily
 
-When role assigned to SA, it is considered `asIdentity`. However when user given permission to access SA it is treated as `resource`
+When role assigned to SA, it is considered as an `Identity`. However when user given permission to access SA it is treated as `resource`. Service account permission can be assigned to user to temporarily elevate users permission. 
+#### SA as resource
+Means can have their own access policies like who can access. 
+serviceAccountUser : Allows that user to attach SAto a resource
+serviceAccountAdmin: Edit,delete,disable serviceAccount.
+serviceAccount Insight can be used to identify SA not used in past 90 days.
 
 ## Cloud IAP
 - Guards apps running on GCP via identity verification
 
-## Cloud Audit logs 
+## [Cloud Audit logs] (https://cloud.google.com/logging/docs/audit)
 - Service like CloudTrail
 - Logs cannot be deleted.
-- Logs are kept for 400 days no cost
+- Admin activity and sys events logs  are kept for 400 days no cost
+- Policy denied and data access default is 30 days and charge apply. 
 - Access Transparency logs contain actions by google on your behalf
 - Data Access logs are kept for 30 days
+
+#### [Audit log roles](https://cloud.google.com/logging/docs/access-control)
+- logViewr  : Can view admin activity, policy denied and system event
+- privateLogViewer : Required to view data access logs.
