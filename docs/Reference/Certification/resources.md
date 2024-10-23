@@ -1,12 +1,14 @@
 # Resources
 
 All resources belong to a single project.
+
 - Global    : images, snapshots, network etc
 - Regional  : External IP addresses, LB 
 - Zonal     : Instance, disk etc
 
 ## Quotas
 All resources are subject to project quotas and limits
+
 - 15 VPC per project
 - 5 Admin actions per sec
 - 24 CPU per region

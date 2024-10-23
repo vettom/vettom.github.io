@@ -13,8 +13,9 @@ Managed code runtime. Can build complete app stack like DB. Support for more lan
 When multiple versions are running, split can be done via IP, HTTP cookie or random selection. Http Cookie is preffered as user will end in same version.
 
 ## Scaling
-Standard : saves money by waiting until no instances are available to serve
-Autoscale : Set threshold, CPU, throughput or Max concurrent requests.
+- Standard : saves money by waiting until no instances are available to serve
+- Autoscale : Set threshold, CPU, throughput or Max concurrent requests.
+
 By default app-engine will scale based on load. However can control and define scaling options.
 `min_idle_instance ` can be used to maintain minimum number of instances.
 

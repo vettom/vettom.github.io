@@ -2,6 +2,7 @@
 
 ## VPC
 VPC is global and subnets are regional. Subnets  can span zones to cover region. Multiple VPC's can be created with in a project.  
+
 - Routing tables are build-in
 - Distributed firewall comes with it
 - Firewall based on tags
@@ -34,5 +35,6 @@ Allows sharing for VPC network with one or more VPC's. One VPC will act as host 
 
 ## Private google access
 - Enable necessary API
+- Turn on per subnet
 - Route API calls to private.googleapis or restricted.googleapi.com (dns)
 - Create necessary cloud router route to private/restricted.googleapi.com
