@@ -1,21 +1,20 @@
 # IAM
 
 ## Org Hierarchy
-
-4 Levels of Hierarchy.
-Organization node
-|-Folders
-  |- Projects
-  	|- Resouce
+- Organization node
+  - Folders
+    - Projects
+      - Resouce
 
 ### Projects
 Are separate entities under organization node. Projects can have their on Billing, API controls and colaborators. Resources can belong to single project. Projects can have different owners and users. 
 3 attributes of Project:
+
 - Project name
 -  Project ID    : Globally unique, and immutable
 - Project Number : Same as above
 
-Resource manager tool enabled management of projects
+Resource manager tool enables management of projects
 
 ### Folders
 Folders can contain Folders or projects. Resource policies can be applied at Folder level.  Folders allows grouping of resources
@@ -23,6 +22,7 @@ Folders can contain Folders or projects. Resource policies can be applied at Fol
 ### Organization node
 - Org Policy administrator
 - Project creator
+
 Google workspace customers projects will automatically belong to Org nodes. Others can create Org ID using Cloud Identity service 
 
 ### Creating and managing Org with IAM
@@ -30,6 +30,7 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 - Org Admin : Defines IAM roles and policies. Define structure and hierarchy.
 
 ## Resource manager Roles
+
 - Organization
   - Admin : full control over all resources
   - Viewer 
@@ -71,6 +72,7 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 
 ### [Support levels for roles](https://cloud.google.com/iam/docs/custom-roles-permissions-support)
 When custom roles are created, not all IAM permissions can be added. Each permission have support level attached
+
 - Supported     : Fully supported in custom roles
 - Testing       : Google is testing this role, can use but may see errors
 - Not_Supported : Cannot be added to custom role
@@ -96,11 +98,12 @@ When custom roles are created, not all IAM permissions can be added. Each permis
   - Google manages rotation of keys daily
 
 When role assigned to SA, it is considered as an `Identity`. However when user given permission to access SA it is treated as `resource`. Service account permission can be assigned to user to temporarily elevate users permission. 
+
 #### SA as resource
-Means can have their own access policies like who can access. 
-serviceAccountUser : Allows that user to attach SAto a resource
-serviceAccountAdmin: Edit,delete,disable serviceAccount.
-serviceAccount Insight can be used to identify SA not used in past 90 days.
+- Means can have their own access policies like who can access. 
+- serviceAccountUser : Allows that user to attach SAto a resource
+- serviceAccountAdmin: Edit,delete,disable serviceAccount.
+- serviceAccount Insight can be used to identify SA not used in past 90 days.
 
 ## Cloud IAP
 - Guards apps running on GCP via identity verification

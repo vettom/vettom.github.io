@@ -63,12 +63,14 @@ Peta-scale data warehouse designed to injest, store, analyze and visualize
 - DataOwner  : Metadata as well
 - jobUser  : Run jobs
 - user  : Make use of data, run jobs etc
+
 INFORMATION_SCHEMA views in BigQuery provide metadata about your BigQuery resources, including datasets, jobs, and tables
 
 ## Bigtable
-No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency
+No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency.
 Ideal for Operational and machine learning applications. Data stored in key:value 
 Ideal if
+
 - more than 1 TB data
 - Data is fast throughput, or rapidly changing.
 - Time series or data with semantic ordering
@@ -77,11 +79,12 @@ Ideal if
 
 ## Firestore
 No SQL database for mobile, web, IoT services.  Data is stored in `documents` and organized in to `collections`. 
-Stored as key:value pair. No SQL queries to retrieve data.
-Indexed by default
-Data is cached and get updated when device is online. 
-Billing based on storage, queries, documents read
-ACID transaction. Ensure entire transaction consistency
+
+- Stored as key:value pair. No SQL queries to retrieve data.
+- Indexed by default
+- Data is cached and get updated when device is online. 
+- Billing based on storage, queries, documents read
+- ACID transaction. Ensure entire transaction consistency
 
 
 ## Memory store (Redis)
