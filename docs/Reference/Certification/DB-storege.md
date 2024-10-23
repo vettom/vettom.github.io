@@ -51,6 +51,16 @@ Peta-scale data warehouse designed to injest, store, analyze and visualize
 - SQL compatible
 - Can read from Cloud BigTable
 - Query editor displays estimated amount data used, allowing to understand cost
+- Supports external data sources like Bigtable, cloud storage etc. Can query without bringing data in including other ext.
+- Federated queries: Allows query to be send to SQl, CloudSpanner etc.
+
+### Big Query Roles
+- Admin  :Manage all resources, cancel jobs, manage all data in project
+- ConnectionAdmin/User 
+- dataEditor : Create edit, delete data tables
+- DataOwner  : Metadata as well
+- jobUser  : Run jobs
+- user  : Make use of data, run jobs etc
 
 ## Bigtable
 No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency

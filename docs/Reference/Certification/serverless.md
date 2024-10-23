@@ -4,18 +4,18 @@
 
 ## App Engine
 Components
-- Application 
-    - Service (Code execution)
-        - Version   (Service can support multiple versions.)
-            - Instance (Single or multi or autoscale)
+- Service (Code execution) single service can support multiple revisions.
+- Version 
+    - Instance (Single or multi or autoscale)
 
 ## Scaling
-Standard : saves money by aiting until no instances are available to serve
+Standard : saves money by waiting until no instances are available to serve
 Autoscale : Set threshold, CPU, throughput or Max concurrent requests.
 By default app-engine will scale based on load. However can control and define scaling options.
+`min_idle_instance ` can be used to maintain minimum number of instances.
 
 ## Traffic splitting
-When multiple versions are running, split can be done via IP, HTTP cookie or random selection. Http Cookie is preffered as user will end in same version.
+When multiple versions are running, split can be done via IP, HTTP cookie or random selection. Http Cookie is preferred as user will end in same version.
 
 ## Cloud functions
 - Default 1 min timeout, can be up to 9min. Https can be up to 60min!

@@ -31,3 +31,8 @@ Direct peering : On-prem to googl service.  No SLA
 
 ## Shared VPC
 Allows sharing for VPC network with one or more VPC's. One VPC will act as host VPC and service project vpc.
+
+## Private google access
+- Enable necessary API
+- Route API calls to private.googleapis or restricted.googleapi.com (dns)
+- Create necessary cloud router route to private/restricted.googleapi.com

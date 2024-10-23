@@ -31,3 +31,4 @@ gcloud beta container --project "master-project-373217" clusters create "cluster
 ## Autoscaler
 - Specify min and max nodes
 - Location `balanced` or `any`
+- 

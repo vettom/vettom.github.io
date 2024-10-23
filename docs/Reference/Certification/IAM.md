@@ -69,6 +69,12 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
   - SAViewer : Read access to SA meta and keys
   - workloadIdentityUser : Impersonate service account from federated accounts.
 
+### [Support levels for roles](https://cloud.google.com/iam/docs/custom-roles-permissions-support)
+When custom roles are created, not all IAM permissions can be added. Each permission have support level attached
+- Supported     : Fully supported in custom roles
+- Testing       : Google is testing this role, can use but may see errors
+- Not_Supported : Cannot be added to custom role
+
 ### Custom roles
 - Manage by self
 - Can be assigned at Project or Org level only, not folder level.
