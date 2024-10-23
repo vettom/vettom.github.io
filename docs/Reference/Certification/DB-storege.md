@@ -26,20 +26,21 @@ NFS V3 compatible file share.
 ## Cloud SQL
 Fully managed Mysql, postgress SQL or SQL server 
 
-    - Automatic replication
-    - data encrypted 
-    - Includes Network firewall
-    - Point in time recovery option.
-    - Cross region replica for DR
+- Automatic replication
+- data encrypted 
+- Includes Network firewall
+- Point in time recovery option.
+- Cross region replica for DR
 
 ## Cloud Datastore
-- NoSQL with index and queries (dynamodb)
+     NoSQL with index and queries (dynamodb)
 
 ## Alloy DB
 A faster SQL compatible DB managed by google.
 
 ## Cloud Spanner
 SQL compatible Relational database. 
+
 - Scales horizontally
 - Very consistent
 - SQL compatible
@@ -48,6 +49,7 @@ SQL compatible Relational database.
 
 ## Big query
 Peta-scale data warehouse designed to injest, store, analyze and visualize 
+
 - SQL compatible
 - Can read from Cloud BigTable
 - Query editor displays estimated amount data used, allowing to understand cost
