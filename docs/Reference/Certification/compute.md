@@ -7,6 +7,7 @@
     - less features 
 
 ## Loadbalancer
+
 - Cloud Loadbalancer. 
     - cross region loadbalancing
     - multi-region failover
@@ -24,11 +25,7 @@
 - Cloud DNS
 - Cloud CDN
 
-## Cloud Functions
-Like Lambda, limited number of languages. Ideal for reactive/event driven apps.
 
-## App engine
-Managed code runtime. Can build complete app stack like DB. Support for more languages. OR can use app engin flexible to containarise unsupported languages.
 
 ## OS Login
 - OS login lets you control access to VM using IAM permission. Also possible to enable 2FA with OS login. 
@@ -39,11 +36,13 @@ Managed code runtime. Can build complete app stack like DB. Support for more lan
 
 ## Image
 Image canbe created from
+
 - disk
 - Image
 - Snapshot
 - Cloud  Storage file
 - virtual disk
+
 Images can be deleted or deprecated.
 
 ## Instance template

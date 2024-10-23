@@ -55,6 +55,7 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 - Billing Administrator
 
 ### [Pre-defined roles](https://cloud.google.com/iam/docs/understanding-roles)
+
 - Instance admin : manage instance. 
 - Browser : Project role to list org structure
 - Billing
@@ -89,6 +90,7 @@ When custom roles are created, not all IAM permissions can be added. Each permis
 - Can be used for SSO on other services as well
 
 ## Service Accounts
+
 - Represents special account that represent application. 
 - Can be consumed by Application or individual user
 - Applications should use service account than accounts API key
@@ -107,8 +109,10 @@ When role assigned to SA, it is considered as an `Identity`. However when user g
 
 ## Cloud IAP
 - Guards apps running on GCP via identity verification
+- Enabled ssh,RDP using proxying
 
-#### [Cloud Audit logs] (https://cloud.google.com/logging/docs/audit)
+#### [Cloud Audit logs](https://cloud.google.com/logging/docs/audit)
+
 - Service like CloudTrail
 - Logs cannot be deleted.
 - Admin activity and sys events logs  are kept for 400 days no cost
@@ -117,5 +121,6 @@ When role assigned to SA, it is considered as an `Identity`. However when user g
 - Data Access logs are kept for 30 days
 
 #### [Audit log roles](https://cloud.google.com/logging/docs/access-control)
+
 - logViewr  : Can view admin activity, policy denied and system event
 - privateLogViewer : Required to view data access logs.

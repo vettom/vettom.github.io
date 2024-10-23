@@ -1,17 +1,18 @@
 # Billing
 
 Billing account can be selfservice or invoiced. In terms of invoiced, bill is send to org.
-Roles
+**Roles**
+
 - Creator   : Can create account
 - Admin     : Can manage, but not create
 - User      : Linke account to projects
 - Viewer
 
-## Billingexport
-Can be exported to BigQ for detailed analysis. Must create BQ dataset to hold data.  
+## Billing export
+Can be exported to BigQ for detailed analysis. Must create BQ dataset to hold data. `Looker` can be used to visualize data 
 
 ## Projects
-By default all Org users can  create projects. `resourcemanager.project.create` role allows creation of projects.   
+By default all Org level users can  create projects. `resourcemanager.project.create` role allows creation of projects.   
 
 ## Cloud billing Account types
 - Self-service
