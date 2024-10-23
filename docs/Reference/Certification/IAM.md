@@ -59,17 +59,17 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 - Instance admin : manage instance. 
 - Browser : Project role to list org structure
 - Billing
-  - costsManager : view analyse and export
-  - user : Can associate billing account and view
+    - costsManager : view analyse and export
+    - user : Can associate billing account and view
 - BigTable
-  - viewer  : No data access
-  - Reader  : Read data
-  - User    : Read write and own data. For users and service accounts.
+    - viewer  : No data access
+    - Reader  : Read data
+    - User    : Read write and own data. For users and service accounts.
 - serviceAccount
-  - user : Run operations are SA
-  - TokenCreator  : Allows token creation as SA
-  - SAViewer : Read access to SA meta and keys
-  - workloadIdentityUser : Impersonate service account from federated accounts.
+    - user : Run operations are SA
+    - TokenCreator  : Allows token creation as SA
+    - SAViewer : Read access to SA meta and keys
+    - workloadIdentityUser : Impersonate service account from federated accounts.
 
 ### [Support levels for roles](https://cloud.google.com/iam/docs/custom-roles-permissions-support)
 When custom roles are created, not all IAM permissions can be added. Each permission have support level attached
@@ -96,8 +96,8 @@ When custom roles are created, not all IAM permissions can be added. Each permis
 - Applications should use service account than accounts API key
 - Can created and download keys for non-gcp but not ideal
 - Use Cloud-platform managed keys 
-  - No downloading of keys
-  - Google manages rotation of keys daily
+    - No downloading of keys
+    - Google manages rotation of keys daily
 
 When role assigned to SA, it is considered as an `Identity`. However when user given permission to access SA it is treated as `resource`. Service account permission can be assigned to user to temporarily elevate users permission. 
 
