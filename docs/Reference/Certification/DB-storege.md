@@ -16,24 +16,24 @@ Directory sync enables VM directory sync
 - Archive : Ideal for DR, accessed less than once year. Higher access cost.
 
 ### Autoclass
-Saves cost by moving infrequent data to lower cost storage
-Storage transfer service : Allow larger data transfer.
-Transfer Appliance : Hardware appliance to transfer data.
+- Saves cost by moving infrequent data to lower cost storage
+- Storage transfer service : Allow larger data transfer.
+- Transfer Appliance : Hardware appliance to transfer data.
 
 ## Filestore
 NFS V3 compatible file share.
 
 ## Cloud SQL
 Fully managed Mysql, postgress SQL or SQL server 
-- Automatic replication
-- data encrypted 
-- Includes Network firewall
-- Point in time recovery option.
-- Cross region replica for DR
+
+    - Automatic replication
+    - data encrypted 
+    - Includes Network firewall
+    - Point in time recovery option.
+    - Cross region replica for DR
 
 ## Cloud Datastore
 - NoSQL with index and queries (dynamodb)
-- 
 
 ## Alloy DB
 A faster SQL compatible DB managed by google.
