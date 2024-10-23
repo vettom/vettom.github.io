@@ -61,6 +61,7 @@ Peta-scale data warehouse designed to injest, store, analyze and visualize
 - DataOwner  : Metadata as well
 - jobUser  : Run jobs
 - user  : Make use of data, run jobs etc
+INFORMATION_SCHEMA views in BigQuery provide metadata about your BigQuery resources, including datasets, jobs, and tables
 
 ## Bigtable
 No SQL wide-column DB optimized for heavy read and write.  Handles huge data volumes with low latency

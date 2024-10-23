@@ -45,3 +45,10 @@ Image canbe created from
 - Cloud  Storage file
 - virtual disk
 Images can be deleted or deprecated.
+
+## Instance template
+- Templates are readonly, cannot be updated
+- Not all options available via console like image family, persistent disk etc. 
+
+## VM Manager
+Tools to manage group of VM and OS. Can control configuration, patch, inventory etc.
