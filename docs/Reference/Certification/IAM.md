@@ -32,15 +32,15 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 ## Resource manager Roles
 
 - Organization
-  - Admin : full control over all resources
-  - Viewer 
+    - Admin : full control over all resources
+    - Viewer 
 - Folder
-  - Admin
-  - Creator : Create folders and view structure
-  - Viewer
+    - Admin
+    - Creator : Create folders and view structure
+    - Viewer
 - Project
-  - Creator:
-  - Deleter:
+    - Creator:
+    - Deleter:
 
 # Cloud IAM
 - Who : Google account, group, service account, Cloud Identity domain. Also called Principle.
@@ -107,9 +107,10 @@ When role assigned to SA, it is considered as an `Identity`. However when user g
 - serviceAccountAdmin: Edit,delete,disable serviceAccount.
 - serviceAccount Insight can be used to identify SA not used in past 90 days.
 
-## Cloud IAP
+## Cloud Identity Aware Proxy
 - Guards apps running on GCP via identity verification
-- Enabled ssh,RDP using proxying
+- Enabled ssh,RDP 
+- Central auth for application accessed via https. 
 
 #### [Cloud Audit logs](https://cloud.google.com/logging/docs/audit)
 
