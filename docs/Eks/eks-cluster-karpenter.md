@@ -1,4 +1,4 @@
-# EKS with Karpenter Autoscaling
+# EKS with Karpenter Autoscaling (v1beta)
 
 > Reffer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
 
