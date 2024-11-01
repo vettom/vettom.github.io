@@ -1,5 +1,7 @@
 # EKS with Karpenter Autoscaling
 
+> Reffer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
+
 Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler
 
 - Cost effective ( Provisions most cost effective instances including SPOT instance)
@@ -17,7 +19,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 ### Contains following: 
 - VPC with 2  privat and 2 public zones
 - EKS cluster with Managed NodeGroup (1 Node)
-- Karpenter Loadbalancer 
+- Karpenter Autoscaling. 
 - Sample App to test Autoscaling
 
 ## Instructions

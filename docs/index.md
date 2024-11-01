@@ -1,6 +1,6 @@
 
 ## Karpenter Autoscaling configuration
-<iframe width="560" height="315" src="https://www.youtube.com/embed/INGAmV8SRu0?si=viH9pDXdD4fefbeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TztGj7lL9o4?si=Ck5HWyI2kKwB8yBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 | Blogs |||

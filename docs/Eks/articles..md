@@ -1,5 +1,5 @@
 # Articles
-- [EKS with Karpenter Autoscaling](https://vettom.github.io/Eks/eks-cluster-karpenter/)
+- [EKS with Karpenter Autoscaling](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
 - [Gateway API (Envoy) with EKS network loadbalancer](https://vettom.github.io/Eks/eks-with-envoy-gateway/)
 - [EKS with Ingress-Nginx controller](https://vettom.github.io/Eks/eks-ingress-nginx/)
 - [Comple EKS Cluster build with terraform](https://vettom.github.io/Eks/eks-cluster-terraform/)
