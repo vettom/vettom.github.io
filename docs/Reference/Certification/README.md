@@ -1,6 +1,6 @@
 # GCP Associate Exam
 Date : Oct 2024
-Collections of notes taken while preparing for Google certified Assocaite exam. Covers quick recap material for refresher for exam after preparations.
+Collections of notes taken while preparing for Google certified Associate exam. Covers quick recap material for refresher for exam after preparations.
 
 ## Free training from Google 
 - [Learning Path free lessons](https://www.cloudskillsboost.google/paths)

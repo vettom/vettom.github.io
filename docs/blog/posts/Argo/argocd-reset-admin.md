@@ -7,7 +7,7 @@ categories:
 ---
 
 # ArgoCD how to reset Admin password.
-ArgoCD Admin account credentials are stored in `argocd-secret` and stored as k8s secret in `argocd-initial-admin-secret`. For security, you must remove `argocd-initial-admin-secret` whle disabling `admin` account. Admin password in `argocd-initial-admin-secret` is stored as one way hash (.htpassword) and hence cannot be decrypted.
+ArgoCD Admin account credentials are stored in `argocd-secret` and stored as k8s secret in `argocd-initial-admin-secret`. For security, you must remove `argocd-initial-admin-secret` while disabling `admin` account. Admin password in `argocd-initial-admin-secret` is stored as one way hash (.htpassword) and hence cannot be decrypted.
 ### Recovery steps
  - Enable Admin account and update argocd. `configs.cm.admin.enabled: true`
  - Remove admin.password from secret `argocd-secret` by editing or by running below command
@@ -23,7 +23,7 @@ kind: Secret
   namespace: argocd
 type: Opaque
 data:
-  admin.password: JDJhJDEwJHhFWTNDNGJwa0ocFdWL2VCZUxHaW1oLnV5TVlzaGdhb3ZxSVE5ZklL
+  admin.password: JDJhJDEwJHhFWTVCZUxHaW1oLnV5TVlzaGdhb3ZxSVE5ZklL
   admin.passwordMtime: MjAyNC0wNi0xOFQxMDowNzo0OVo=
   server.secretkey: K1ZCZlpEeWYwMFpjUzV5NG5tTUROOFllS0plYz0=
 ```

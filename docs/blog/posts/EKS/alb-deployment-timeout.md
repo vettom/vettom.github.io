@@ -24,7 +24,7 @@ There are 2 possible reasons for this scenario and both must be addressed.
 ## Solution
 
 ### Enable pod readiness Gate
-Configure [Pod readiness Gate](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.7/deploy/pod_readiness_gate/) to indicate that pod is registered to the ALB/NLB and healthy to receive traffic. This will ensure pod is healthy in target group before trminating olde pod.
+Configure [Pod readiness Gate](https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.7/deploy/pod_readiness_gate/) to indicate that pod is registered to the ALB/NLB and healthy to receive traffic. This will ensure pod is healthy in target group before terminating old pod.
 
 To enable Pod readiness Gate, add label `elbv2.k8s.aws/pod-readiness-gate-inject: enabled` to applications Namespace. Change will be effective for any new pod being deployed.
 
@@ -50,7 +50,7 @@ Solution to this issue is a workaround. Add a `lifecycle` policy to the pod to [
 
 ```
 
-Adjust ALB/TG Deregistration time to be smaller than lifecycle time by adding annotaion `deregistration_delay.timeout_seconds`
+Adjust ALB/TG De-registration time to be smaller than lifecycle time by adding annotation `de-registration_delay.timeout_seconds`
 ```yaml
 ingress:
   enabled: true

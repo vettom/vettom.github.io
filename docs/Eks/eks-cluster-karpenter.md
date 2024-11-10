@@ -1,13 +1,13 @@
 # EKS with Karpenter Autoscaling (v1beta)
 
-> Reffer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
+> Refer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
 
 Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler
 
 - Cost effective ( Provisions most cost effective instances including SPOT instance)
 - Fast auto scaling (Less than 2min)
-- Resource consolidation (Reduce number of nodes by organising pod spread when spare capacity available)
-- Regular node recycle (Reprovision nodes at set interval to provision them on upto date hardware.)
+- Resource consolidation (Reduce number of nodes by organizing pod spread when spare capacity available)
+- Regular node recycle (Reprovision nodes at set interval to provision them on up to date hardware.)
 
 > :information_source: EKS API Authentication mode is used while creating EKS cluster. 
 
@@ -17,7 +17,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 <iframe width="560" height="315" src="https://www.youtube.com/embed/INGAmV8SRu0?si=viH9pDXdD4fefbeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Contains following: 
-- VPC with 2  privat and 2 public zones
+- VPC with 2  private and 2 public zones
 - EKS cluster with Managed NodeGroup (1 Node)
 - Karpenter Autoscaling. 
 - Sample App to test Autoscaling
@@ -25,7 +25,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 ## Instructions
 > :warning: If cluster endpoint not updated, Karpenter nodes will not join cluster
 ```sh
-terrafor init -upgrade ; terraform apply
+terraform init -upgrade ; terraform apply
 # Update cluster endpoint in Karpenter-app/karpenter-values.yaml file
 "clusterEndpoint: https://11111111111.gr7.eu-west-1.eks.amazonaws.com"
 # Configure local kubeconfig

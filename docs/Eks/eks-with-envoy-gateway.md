@@ -38,7 +38,7 @@ spec:
           service.beta.kubernetes.io/aws-load-balancer-target-group-attributes: preserve_client_ip.enabled=true
 ```
 ### Create a GatewayClass and configre to use Proxy configuration
-Envoy `GatewayClass` can be configured to use `EnvoyProxy` configuration. Any gateway created usign this `GatewayClass` will inherit configuration
+Envoy `GatewayClass` can be configured to use `EnvoyProxy` configuration. Any gateway created using this `GatewayClass` will inherit configuration
 
 ```yaml
 apiVersion: gateway.networking.k8s.io/v1

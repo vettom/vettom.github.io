@@ -33,7 +33,7 @@ It is not a pool as name suggested, Karpenter provisions individual nodes based 
 ## Installation Instructions
 Terraform code provided in [aws-eks-terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-karpenter-V1) includes creation of a new VPC andEKS cluster with single Spot instance. It also includes necessary IAM profile for Karpenter, and custom `instanceProfile` for Karpenter use. Karpenter-app contains minimum required values for Karpenter, and `ec2NodeClass` and `nodePool` configured with `Bottlerocket` AMI
 ```bash
-terrafor init -upgrade ; terraform apply
+terraform init -upgrade ; terraform apply
 # Configure local kubeconfig
 aws eks --profile labs  --region eu-west-1 update-kubeconfig --name eks-demo
 # Verify cluster access

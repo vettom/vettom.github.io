@@ -1,6 +1,6 @@
 # Dockerfile reference
 
-| Commands | Descreption | 
+| Commands | Description | 
 | ------------- | ------------- |
 |COPY  | Copy files in to the image|
 | Volume    |Creates a Mountpoint as defined|

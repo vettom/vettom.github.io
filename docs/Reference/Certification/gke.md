@@ -10,7 +10,7 @@
 - Location 
     - Zonal
     - Regional
-- Fleet : Logically grou cluster. For outside project only CLI option to register
+- Fleet : Logically group cluster. For outside project only CLI option to register
 - Nodepool upgrade
     - Surge : Manage how many nodes at a time rolling
     - Blue/green

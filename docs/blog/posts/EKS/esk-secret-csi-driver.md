@@ -21,7 +21,7 @@ Configuring Secrets manager [AWS Secrets Manager and Config Provider](https://gi
 ## Scenario
 - You have configured Secret called MySecret with data username and password
 - Necessary policy created in AWS to allow access to Secret
-- Iamservice account called 'nginx-deployment-sa' created and policy attached
+- Iam serviceAccount called 'nginx-deployment-sa' created and policy attached
 
 ## Creating K8s Secrets from AWS Secrets
 

@@ -5,7 +5,7 @@ Billing account can be selfservice or invoiced. In terms of invoiced, bill is se
 
 - Creator   : Can create account
 - Admin     : Can manage, but not create
-- User      : Linke account to projects
+- User      : Link account to projects
 - Viewer
 
 ## Billing export

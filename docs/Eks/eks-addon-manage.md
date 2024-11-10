@@ -19,7 +19,7 @@ aws eks describe-addon-versions \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
 ### Get all versions of specific addon for k8s version
-Sometimes you may not want latest version and find out all avilable versions for an addon
+Sometimes you may not want latest version and find out all available versions for an addon
 ```bash
 aws eks describe-addon-versions  \
     --kubernetes-version=1.30 \
@@ -27,7 +27,7 @@ aws eks describe-addon-versions  \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[].addonVersion }'
 ```
 ### Get list of all available addons
-Simple list of all awailable addons
+Simple list of all available addons
 ```bash
 aws eks describe-addon-versions \
     --kubernetes-version=1.30 \
@@ -39,7 +39,7 @@ aws eks describe-addon-versions  \
     --kubernetes-version=1.30  --owner=aws \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
-### Get configuation options for addon
+### Get configuration options for addon
 Many addons comes with additional configuration options. Yaml output provides best format.
 ```bash
 aws eks --profile $PROFILE describe-addon-configuration --addon-name vpc-cni --addon-version v1.15.5-eksbuild.1 --output yaml 

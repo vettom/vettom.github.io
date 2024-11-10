@@ -6,7 +6,7 @@ Is single pane of glass where you can see resources from  multiple projects. Any
 ## Logging
 - Stored for 30 days
 - Data can be exported to Cloud Storage, BigQuery or pubsub.
-- Big query can analyse and visualize with Looker studio
+- Big query can analyze and visualize with Looker studio
 - Pub/sub enables streaming of logs to endpoint or apps
 
 ## Error reporting

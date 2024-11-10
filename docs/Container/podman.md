@@ -56,7 +56,7 @@ podman ps (-a to list all including stopped)
 | Commands | Descreption | 
 | ------------- | ------------- |
 |podman ps -a|List all containers including stopped|
-|podman run -p 5000:5000 -d <image> | Run container in Daemon mode and portforward|
+|podman run -p 5000:5000 -d <image> | Run container in Daemon mode and port forward|
 |podman image tag <imageid> newtag:version|Create new Tag for image|
 |podman image prune -a| Delete al the images|
 |podman inspect <imageID>| Inspect a container image|

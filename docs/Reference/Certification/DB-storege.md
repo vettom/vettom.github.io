@@ -1,7 +1,7 @@
 # DB and Storage
 
 ## Cloud Storage
-Object storage bucket. Any amount of data and retrieve any numer of time. 
+Object storage bucket. Any amount of data and retrieve any number of time. 
 Storing BLOB is ideal.  Data stored is immutable, only new version or overwrite.
 Allows versioning. 
 Cached at edge location by default

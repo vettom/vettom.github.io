@@ -59,7 +59,7 @@ Google workspace customers projects will automatically belong to Org nodes. Othe
 - Instance admin : manage instance. 
 - Browser : Project role to list org structure
 - Billing
-    - costsManager : view analyse and export
+    - costsManager : view analzse and export
     - user : Can associate billing account and view
 - BigTable
     - viewer  : No data access

@@ -44,7 +44,7 @@ podman run -ti --rm localhost/myapp_arm /bin/sh
 podman login --get-login docker.io 
 # Logon to docker hub
 podman -u <USER> docker.io
-# Push  imaget to docker registry
+# Push  image to docker registry
 
 podman push <image id> docker://docker.io/$USER/myapp
 ```

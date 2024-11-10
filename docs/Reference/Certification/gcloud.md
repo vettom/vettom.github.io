@@ -18,7 +18,7 @@ gcloud container clusters create
 # List cluster
 gcloud container clusters list
 
-# Confogire cluster for kubectl
+# Confogure cluster for kubectl
 gcloud container clusters get-credentials --zone eu-west1 cluster1
 
 # Add nodes

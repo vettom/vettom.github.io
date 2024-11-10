@@ -35,7 +35,7 @@
 - osLoginExternalUser to allow connection from different Org.
 
 ## Image
-Image canbe created from
+Image can be created from
 
 - disk
 - Image

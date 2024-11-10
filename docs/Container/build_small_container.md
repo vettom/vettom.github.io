@@ -1,4 +1,4 @@
-# Container Builder process
+# Optimized container build
 
 Building small container images has several significant advantages, especially for cloud-based and microservices environments. some of them are
 
@@ -11,14 +11,14 @@ Building small container images has several significant advantages, especially f
 ## Techniques for Building Smaller Containers
 
 - Using distroless/minimal base images (minimal,alpine, slim version)
-- Multistage build. Onle necessary files in image. 
+- Multistage build. Only necessary files in image. 
 - Minimizing the number of layers
 - Understanding caching
 - Using Dockerignore
 - Keeping application data elsewhere
 
 ### Distroless / Alpine image
-[Distroles images](https://github.com/GoogleContainerTools/distroless) contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution. Most common applications have a distroless image availablie to download
+[Distroles images](https://github.com/GoogleContainerTools/distroless) contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution. Most common applications have a distroless image available to download
 Alternatively, start with Alpine, minimal, or slim version of application images
 
 ### Multistage build. Builder pattern

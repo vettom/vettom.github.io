@@ -3,14 +3,14 @@
 > Only single App Engine App per project!
 
 ## App Engine
-Managed code runtime. Can build complete app stack like DB. Support for more languages. OR can use app engin flexible to containarise unsupported languages.
+Managed code runtime. Can build complete app stack like DB. Support for more languages. OR can use app engin flexible to containarize unsupported languages.
 
 - Service (Code execution) single service can support multiple revisions.
 - Version 
     - Instance (Single or multi or autoscale)
 
 ### Traffic splitting
-When multiple versions are running, split can be done via IP, HTTP cookie or random selection. Http Cookie is preffered as user will end in same version.
+When multiple versions are running, split can be done via IP, HTTP cookie or random selection. Http Cookie is preferred as user will end in same version.
 
 ## Scaling
 - Standard : saves money by waiting until no instances are available to serve

@@ -12,13 +12,13 @@ git tag --delete v1.0.0
 # Delete tag remote
 git push --delete origin v1.0.0
 # Create branch from tag
-git checkout -b newbranch v1.0.0
+git checkout -b new-branch v1.0.0
 
 ```
 
 ## Git delete all commit history
 ```bash
-# Checkkout main branch and then create orphan branch
+# Checkout main branch and then create orphan branch
 git checkout --orphan temp_branch
 
 #Add all files and commit
@@ -40,7 +40,7 @@ git config -l
 # Check username and email set for current repo
 git config user.email ; git config user.name
 
-# Set git sername and email
+# Set git username and email
 git config user.email denny@vettom.com; git config user.name "Denny Vettom"
 
 # Configure git to use specific ssh key
