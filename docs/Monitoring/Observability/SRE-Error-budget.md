@@ -1,5 +1,6 @@
 # SRE-Error-budget
 
+![SRE](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/sre.jpg){: style="height:100px;width:150px" align=right }
 1. Is error budget realistic.
 2. What are the single source of burning off Error budget
 3. Any low hanging fruits that can increase availability
@@ -26,6 +27,7 @@ Prioritize risks based on their potential impact
 
 
 ## Error Budget Policy
+
 
    An error budget policy describes how your business decides to trade off reliability work against other feature work when this SLO indicates a service is not reliable enough. The purpose of such a policy is to guide your organization into meaningful and appropriate action when the reliability of your service is threatened. 
   Here are seven considerations. 

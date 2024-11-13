@@ -2,6 +2,8 @@
 
 Alertmanager configuration allows multiple way to customize the alerts
 
+![Prometheus](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/prometheus.png){: style="height:100px;width:100px" align=right }
+
 - Grouping : Group similar kind of alerts
 - Routing  : Sending alerts to different channels
 - Inhibit  : Define dependency to get alert for actual cause of problem
@@ -37,7 +39,7 @@ receivers:
           send_resolved: true
     - name: webteam_email
       webhook_configs:
-        - url: htpps:someurl.com
+        - url: https://someurl.com
           send_resolved: false
 ```
 #### Group alerts

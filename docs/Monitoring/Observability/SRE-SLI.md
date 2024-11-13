@@ -1,7 +1,7 @@
 # SRE Principles SLI
 
 ## Ways to measure SLI
-
+![SRE](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/sre.jpg){: style="height:100px;width:150px" align=right }
 - Request logs
     Processing request logs can identify result/success rate of complex requests being processed by your servers. It is possible to add logic in the code to identify good transactions. 
 

@@ -1,5 +1,5 @@
 # SRE Principles SLO
-
+![SRE](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/sre.jpg){: style="height:100px;width:150px" align=right }
   User experiences are strongly connected to past experiences. Evaluate metrics of the systems when users were seem happy to select metrics. 
 
 ## Getting started

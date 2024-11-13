@@ -4,8 +4,6 @@ Getting started with creating a functional EKS cluster from scratch can be chall
 
 :desktop_computer:  [EKS cluster using terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB) contains everything required for you to spin up a new cluster and expose application via Application Loadbalancer. All you need to do is apply terraform code
 
-- [Source Code](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB)
-- [Sample app](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB/Sample-app)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EAz6ap4pm6Y?si=IFt0DzUjjMvpQviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

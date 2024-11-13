@@ -2,7 +2,8 @@
 
 > Refer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
 
-Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler
+Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler.
+![karpenter](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/karpenter.png){: style="height:100px;width:100px" align=right }
 
 - Cost effective ( Provisions most cost effective instances including SPOT instance)
 - Fast auto scaling (Less than 2min)
