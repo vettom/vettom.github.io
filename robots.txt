@@ -1,0 +1,4 @@
+extra:
+  robots:
+    enabled: true
+    sitemap: true
