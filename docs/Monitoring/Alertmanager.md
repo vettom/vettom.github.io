@@ -2,7 +2,8 @@
 
 Alertmanager configuration allows multiple way to customize the alerts
 
-![Prometheus](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/prometheus.png){: style="height:100px;width:100px" align=right }
+![Prometheus Alertmanger](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/alertmanager.jpg){: style="height:100px;width:100px" align=right }
+
 
 - Grouping : Group similar kind of alerts
 - Routing  : Sending alerts to different channels
@@ -44,6 +45,8 @@ receivers:
 ```
 #### Group alerts
 Configure alerts groups based on labels to reduce individual alerts. for example group by `[team, service, severity]`. There is a default grouping rule by default.
+
+![Prometheus](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/prometheus.png){: style="height:100px;width:100px" align=right }
 
 ### Group delivery config
 - group_wait  : how long to wait before sending signal

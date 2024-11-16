@@ -10,7 +10,8 @@
 - HTTPRoute : Defines rules for routing traffic like backend, redirects, canary, traffic mirroring etc.
 
 ## Implement Envoy gateway Fabric
-<img src="https://vettom.github.io/Eks/img/envoy-gateway.jpg" width="600" height="300">
+
+![Prometheus Alertmanager](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/envoy-gateway.jpg){: style="height:300px;width:600px" }
 
 ### Setup
 Create an EKS cluster with VPC-CNI and AWS Loabalancer controller installed. Complete terraform code to implement can be found at [EKS-Envoy-Gateway](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Envoy-Gateway) folder in [https://github.com/vettom/aws-eks-terraform](https://github.com/vettom/aws-eks-terraform) repo.

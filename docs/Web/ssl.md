@@ -1,5 +1,6 @@
 # Ssl
-
+![SSLCertificate](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/ssl.png){: style="height:100px;width:100px" align=right }
+Some very useful ssl commands to check, validate SSL certificates
 ## Check certificate from URL
 ```bash
 openssl s_client -showcerts -connect domain.com:443

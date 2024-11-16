@@ -10,8 +10,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 - Regular node recycle (Re-provision nodes at set interval to provision them on up to date hardware.)
 
 ## BottleRocket
-[Amazon BottleRocket](https://aws.amazon.com/bottlerocket/?amazon-bottlerocket-whats-new.sort-by=item.additionalFields.postDateTime&amazon-bottlerocket-whats-new.sort-order=desc) is a 
-Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers. Highly secure, optimized for containers and fast provisioning. 
+[Amazon BottleRocket](https://aws.amazon.com/bottlerocket/?amazon-bottlerocket-whats-new.sort-by=item.additionalFields.postDateTime&amazon-bottlerocket-whats-new.sort-order=desc) is a Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers. Highly secure, optimized for containers and fast provisioning. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TztGj7lL9o4?si=Ck5HWyI2kKwB8yBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

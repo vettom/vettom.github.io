@@ -1,6 +1,6 @@
 # Alertmanager email notification
-![Prometheus](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/prometheus.png){: style="height:100px;width:100px" align=right }
-Prometheus Alertmanager supports various kind of alerting. In this example, I will demonstrate how to configure Gmail account to send alerts. I will be using `kube-prometheus-stack` and only covering alertmanager section.
+![Prometheus Alertmanager](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/alertmanager.jpg){: style="height:100px;width:100px" align=right }
+[Prometheus Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) supports various kind of alerting. In this example, I will demonstrate how to configure Gmail account to send alerts. I will be using `kube-prometheus-stack` and only covering alertmanager section.
 
 ### Getting Gmail credentials
 Log on to your Gmail account and Navigate to `Manage your google accounts`. Search for `App passwords` and generate a new password.

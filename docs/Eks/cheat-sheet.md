@@ -1,11 +1,13 @@
 # A Cheat sheet
 
 ### Eks kube config
+Update kubeconfig file with AWS EKS cluster credentials
 ```bash
 aws eks --profile $PROFILE  --region eu-west-2 update-kubeconfig --name $CLUSTERNAME 
 ```
 
 ### Addons
+Commands to list and verify EKS addons and its versions for specific K8s versions.
 ```bash
 # Get latest version for specific add on for specific K8s version
 aws eks describe-addon-versions --profile $PROFILE \
@@ -23,6 +25,25 @@ aws eks --profile $PROFILE describe-addon-configuration --addon-name vpc-cni --a
 
 # List addons installed on your cluster
 aws eks --profile $PROFILE list-addons --cluster-name uk-as-dev-cluster1
+```
+
+# ECR public repo unable to retrieve credentials
+When trying to access public repo hosted on AWS ECR can result in Authentication failure. 
+
+** ERROR
+```bash
+helm pull oci://public.ecr.aws/karpenter/karpenter       
+                                               
+Error: GET "https://public.ecr.aws/v2/karpenter/karpenter/tags/list":
+unable to retrieve credentials
+```
+### Solution
+Log on to helm registry with AWS ECR public access credentials
+```bash
+aws ecr-public get-login-password \
+     --region us-east-1 | helm registry login \
+     --username AWS \
+     --password-stdin public.ecr.aws
 ```
 
 ### Service account
