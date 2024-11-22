@@ -1,6 +1,6 @@
 # Podman docker alternative
 
-## Build container without Docker (Mac/Linux/Windows)
+## Build container without Docker (Mac (AMD/ARM))
 ![alt text](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/podman.png "podman logo"){ width="300" }
 
 [Podman](https://podman.io/) is an opensource tool to manage all your container needs without requiring Docker or Docker desktop. It has same command sets as Docker and it does not require Daemon.

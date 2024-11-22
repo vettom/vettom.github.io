@@ -7,7 +7,7 @@ Getting started with creating a functional EKS cluster from scratch can be chall
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EAz6ap4pm6Y?si=IFt0DzUjjMvpQviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<img src="https://vettom.github.io/Eks/img/eks-design.png" width="600" height="400">
+![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks-design-basic.png){: style="height:300px;width:400px" align=right }
 
 ### Resources
 - VPC with 2  private and 2 public zones

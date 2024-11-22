@@ -9,7 +9,7 @@ categories:
 # Performance / Load testing types 
 There are four  common performance testing techniques.Each of these techniques achieve different results, which will help to determine how a system performs in terms of responsiveness and stability, as well as whether various attributes of the application adhere to the product specification.
 
-![Performance test](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/performance_test.jpg){: style="height:200px;width:400px" }
+![Performance test](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/performance_test.jpg){: style="height:200px;width:250px" align=right}
 
 ### Load testing
 Load testing evaluates a system and its behaviour while exposed to a specific load, which is usually the expected volume of traffic the application is likely to be subject to under peak conditions.
