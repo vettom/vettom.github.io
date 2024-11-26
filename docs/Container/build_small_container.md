@@ -8,20 +8,23 @@ Building small container images has several significant advantages, especially f
 - Resource efficiency 
 - Easier to debug and audit
 
+
 ## Techniques for Building Smaller Containers
 
 - Using distroless/minimal base images (minimal,alpine, slim version)
-- Multistage build. Only necessary files in image. 
+- Multistage build (Builder process). Only necessary files copied in to image. 
 - Minimizing the number of layers
 - Understanding caching
 - Using Dockerignore
 - Keeping application data elsewhere
 
+![Alpine Linux logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/alpine-linux.png){: style="height:150px;width:150px" align=right }
 ### Distroless / Alpine image
 [Distroles images](https://github.com/GoogleContainerTools/distroless) contain only your application and its runtime dependencies. They do not contain package managers, shells or any other programs you would expect to find in a standard Linux distribution. Most common applications have a distroless image available to download
 Alternatively, start with Alpine, minimal, or slim version of application images
 
 ### Multistage build. Builder pattern
+![Reduce containe imagesize ](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/image-reduce.jpg){: style="height:150px;width:250px" align=right }
 Most compiled languages requires lots libraries during build which can be huge. Use multi stage build to build with one container and create new application container with compiled application only.
 ```dockerfile
 # Stage 1: Build the Go binary
@@ -72,3 +75,6 @@ If application require data, ideally this can be in a shared volume or mounted a
  - [SlimToolkit](https://devopscube.com/slimtoolkit-to-shrink-docker-images/) is a tool that helps to optimize Docker images by removing unnecessary layers and files.
  - [Dive](https://github.com/wagoodman/dive) A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.
  - [Docker Squash](https://docs.docker.com/reference/cli/docker/image/build/#squash)  `--squash` Once the image is built, this flag squashes the new layers into a new image with a single new layer.
+
+ ### Building small container by Google
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/wGz_cbtCiEA?si=v_2MCWqta2_cJk7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

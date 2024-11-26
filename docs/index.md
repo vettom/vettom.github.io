@@ -3,10 +3,10 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TztGj7lL9o4?si=Ck5HWyI2kKwB8yBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-| Blogs |||
+| Articles |||
 |-------------------------| -------------------------| -------------------------|
 |[Karpenter autoscaling configuration with EKS cluster ](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)| [EKS with Ingress-Nginx controller](https://vettom.github.io/Eks/eks-ingress-nginx/)|
-|[Complete EKS Cluster build with terraform](https://vettom.github.io/Eks/eks-cluster-terraform/)| [How to mount secrets as env variables using CSI Driver](http://vettom.github.io/blog/2024/04/02/eks-secrets-as-env-variable-with-csi-driver/)|
+|[Complete EKS Cluster build with terraform](https://vettom.github.io/Eks/first-eks-cluster/)| [How to mount secrets as env variables using CSI Driver](http://vettom.github.io/blog/2024/04/02/eks-secrets-as-env-variable-with-csi-driver/)|
 |[How to build small container](https://vettom.github.io/Container/build_small_container/)|[Dockerfile reference](https://vettom.github.io/Container/dockerfile_reference/)|
 |[podman docker alternative](https://vettom.github.io/Container/podman/)|[EKS configuring ALB to avoid errors and timeouts during deployment](https://vettom.github.io/blog/2024/03/28/eks-avoid-errors-and-timeout-during-deployment-alb/)|
 |[podman build and publish container](https://vettom.github.io/Container/container_on_mac/)| |
