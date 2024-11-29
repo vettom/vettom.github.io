@@ -23,6 +23,7 @@ Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is
 - Karpenter Autoscaling. 
 - Sample App to test Autoscaling
 
+![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
 ## Instructions
 > :warning: If cluster endpoint not updated, Karpenter nodes will not join cluster
 ```sh

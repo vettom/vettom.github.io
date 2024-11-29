@@ -52,6 +52,22 @@ curl http://localhost:5000/
 # Check running containers
 podman ps (-a to list all including stopped)
 ```
+## Start minikube with podman
+
+![minikube](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/minikube.png){:  align=right }
+It’s recommended to run minikube with the podman driver and CRI-O container runtime (except when using Rootless Podman)
+```bash
+minikube start --driver=podman --container-runtime=cri-o
+# To make podman as default driver
+minikube config set driver podman
+```
+** Rootless Podman **
+By default, minikube executes Podman with sudo. To use Podman without sudo (i.e., Rootless Podman), set the rootless property to true:
+```bash
+minikube config set rootless true
+minikube start --driver=podman --container-runtime=containerd
+```
+
 ## Command references
 | Commands | Descreption | 
 | ------------- | ------------- |

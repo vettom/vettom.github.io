@@ -1,4 +1,6 @@
 # Articles
+![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
+
 - [EKS with Karpenter Autoscaling](https://vettom.github.io/Eks/eks-cluster-karpenterV1/)
 - [Gateway API (Envoy) with EKS network loadbalancer](https://vettom.github.io/Eks/eks-with-envoy-gateway/)
 - [EKS with Ingress-Nginx controller](https://vettom.github.io/Eks/eks-ingress-nginx/)

@@ -10,7 +10,7 @@
 |[kube-ps1](https://github.com/jonmosco/kube-ps1)| Get k8s context as prompt|[mkdocs](https://www.mkdocs.org/)| Product documentation from markup |
 |[Iam to TF HCL](https://flosell.github.io/iam-policy-json-to-terraform/)|Iam policy for TF hcl data|[kubeconfig-cleanup](https://github.com/B23admin/kubectl-config-cleanup)|Clean up Kube config file|
 |[Krew](https://github.com/kubernetes-sigs/krew)|Help install kubectl plugins|[Inspector Gadget](https://www.inspektor-gadget.io)|eBPF based gadget to troubleshoot|
-|[kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)|Decrypt secret|||
+|[kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret)|Decrypt secret|[Karma](https://karma-dashboard.io/)|Dashboard for Alertmanager|
 
 ## Networking
 [Visual subnet splitter](https://www.fryguy.net/wp-content/tools/subnets.html)

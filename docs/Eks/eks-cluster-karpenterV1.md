@@ -19,6 +19,8 @@ There are some prerequisites to provisioning Karpenter on EKS cluster.
 #### IAM Role
 Karpenter require IAM role to join Cluster and provision nodes. In this example I am creating IAM role called `karpenter-controller-eks-demo`. IAM trust policy is attached so that `karpenter-controller-eks-demo` serviceAccount in `karpenter` namespaces is allowed to assume this role. Various Ec2 permissions are assigned to the role so that it has necessary permissions to get pricing of instances and provision new nodes. `eks:DescribeCluster` permission is added so that Karpenter pod can identify cluster endpoint, than having to manually update in Helm values.
 
+![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
+
 #### InstanceProfile
 It is advised to have dedicated `instanceProfile` for Karpenter. 
 #### Helm Values

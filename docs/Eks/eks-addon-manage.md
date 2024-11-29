@@ -1,4 +1,5 @@
 # EKS Addons management
+![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
 AWS provides multiple addon packages to aid EKS cluster and some of those are installed by default. However it does not always get upgraded unless you specify respective version. It is not always easy finding the right version of package and here is a collection commands to help with that.
 
 There are additional addons provided by vendors as well
