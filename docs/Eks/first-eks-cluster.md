@@ -36,7 +36,7 @@ module "vpc" {
 ```
 In above VPC module, I am creating a VPC with 2 subnets across 2 Zones. `Public_subnets` will have Gateway attached, and `Private_subnets` will have a `NAT Gateway` attached to enable private nodes to communicate with external sources like git repo, container registry etc. DNS Hostnames must be enabled and add respective tags for subnets.
 
-![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
+![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
 ## Provision EKS cluster
 Below code will provision EKS cluster in to the VPC you have just created. It will have single `NodeGroup` with single SPOT instance to save cost. Kubernetes 1.31 is latest supported version available at this point in time. Provisioning EKS cluster in to private_subnet is best practice. Cluster-endpoint can be private or public, if public, you have option to [whitelist cluster endpoint](https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html#modify-endpoint-access)
 

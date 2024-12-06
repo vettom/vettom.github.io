@@ -5,17 +5,17 @@ AWS provides multiple addon packages to aid EKS cluster and some of those are in
 There are additional addons provided by vendors as well
 
 ### List all addons and latest version for specific k8s version
-Following command will list all addons and their latest version for kubernetes 1.30
+Following command will list all addons and their latest version for kubernetes 1.31
 ```bash
 aws eks describe-addon-versions \
-    --kubernetes-version=1.30 \
+    --kubernetes-version=1.31 \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
 ### Get latest version for specific addon
 This command will return latest version of addon available for k8s version provided
 ```bash
 aws eks describe-addon-versions \
-    --kubernetes-version=1.30 \
+    --kubernetes-version=1.31 \
     --addon-name=vpc-cni \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
@@ -23,7 +23,7 @@ aws eks describe-addon-versions \
 Sometimes you may not want latest version and find out all available versions for an addon
 ```bash
 aws eks describe-addon-versions  \
-    --kubernetes-version=1.30 \
+    --kubernetes-version=1.31 \
     --addon-name=vpc-cni \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[].addonVersion }'
 ```
@@ -31,13 +31,13 @@ aws eks describe-addon-versions  \
 Simple list of all available addons
 ```bash
 aws eks describe-addon-versions \
-    --kubernetes-version=1.30 \
+    --kubernetes-version=1.31 \
     --query 'sort_by(addons  &addonName)[].{addonName: addonName}' | grep addonName | awk -F: '{ print $2}'
 ```
 ### List all addons provided by AWS and latest version
 ```bash
 aws eks describe-addon-versions  \
-    --kubernetes-version=1.30  --owner=aws \
+    --kubernetes-version=1.31  --owner=aws \
     --query 'sort_by(addons  &addonName)[].{owner: owner, addonName: addonName, type: type, Version: addonVersions[0].addonVersion }'
 ```
 ### Get configuration options for addon

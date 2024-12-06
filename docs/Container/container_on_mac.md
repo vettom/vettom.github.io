@@ -67,5 +67,4 @@ docker.io/library/alpine  latest      c157a85ed455  2 months ago   9.11 MB
 Next step is to tag this image
 ```bash
 podman tag <imageid>  newapp
-
 ```

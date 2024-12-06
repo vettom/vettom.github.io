@@ -46,12 +46,19 @@ podman build -t myflask:latest .
 # Check your images
 podman images
 # Run your container
-pod podman run localhost/myflask:latest -p 5000:5000
+podman run -p 5000:5000 localhost/myflask:latest 
 # Verify the site
 curl http://localhost:5000/
 # Check running containers
 podman ps (-a to list all including stopped)
 ```
+
+## Push image to GHCR
+```bash
+podman login ghcr.io
+podman  push localhost/myflask ghcr.io/vettom/flask_app:latest
+```
+
 ## Start minikube with podman
 
 ![minikube](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/minikube.png){:  align=right }
