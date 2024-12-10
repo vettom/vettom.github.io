@@ -10,6 +10,8 @@ There are 2 parts to installing and configuring external DNS. In this example, I
 1. Create IAM policy and Pod Identity association
 2. Install External-DNS by passing necessary values
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3PiJnm6JhQw?si=HOuCFCOVciC7vTQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ### IAM policy and pod identity
 
 1. Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
@@ -73,6 +75,8 @@ domainFilters:
   - vettom.online # Specify which domains to manage  DNS entry for. All other HTTP route/Ingresses are ignored.
 txtOwnerId: "eks-demo-cluster"    # TXT record value created to mark ownership of External-DNS. Ideally this text should be able to identify service/cluster that owns the record
 ```
+Install external-dns helm chart using values file above
+`helm install external-dns -n external-dns --create-namespace external-dns/external-dns -f values.yaml`
 
 6. Deploy application with `Httproute` and validate.
 
