@@ -5,36 +5,16 @@
 
 ## Configure External DNS
 There are 2 parts to installing and configuring external DNS. In this example, I will demonstrate configuring EKS cluster to manage domains configured on Route53
-![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
+![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/route53.jpg){: style="height:100px;width:100px" align=right }
 
 1. Create IAM policy and Pod Identity association
 2. Install External-DNS by passing necessary values
 
 ### IAM policy and pod identity
 
-1. Create IAM role `external-dns-controller` with Pod Identity trust policy. 
+1. Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
 ```json
-# Trust policy for Pod Identity service
-data "aws_iam_policy_document" "podidentity" {
-  statement {
-    effect = "Allow"
-
-    principals {
-      type        = "Service"
-      identifiers = ["pods.eks.amazonaws.com"]
-    }
-
-    actions = [
-      "sts:AssumeRole",
-      "sts:TagSession"
-    ]
-  }
-}
-```
-
-2. Create IAM policy and attach to IAM Role. Note that this policy is open to manage all zones.
-```json
-# IAM policy allowing DNS updates.
+# IAM policy external_dns_iam_policy allowing DNS updates.
     {
       "Version" : "2012-10-17",
       "Statement" : [
@@ -60,8 +40,29 @@ data "aws_iam_policy_document" "podidentity" {
       ]
     }
 ```
-3. Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
-4. Install External DNS using Helm charts with custom values.
+2. Create IAM role `external-dns-controller` with Pod Identity trust policy. 
+```json
+# Trust policy for Pod Identity service
+data "aws_iam_policy_document" "podidentity" {
+  statement {
+    effect = "Allow"
+
+    principals {
+      type        = "Service"
+      identifiers = ["pods.eks.amazonaws.com"]
+    }
+
+    actions = [
+      "sts:AssumeRole",
+      "sts:TagSession"
+    ]
+  }
+}
+```
+3. Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
+4. Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
+5. Install External DNS using Helm charts with custom values.
+
 ```yaml
 serviceAccount:
   name: external-dns-controller  # Should match SA specified in Pod ID association
@@ -73,10 +74,11 @@ domainFilters:
 txtOwnerId: "eks-demo-cluster"    # TXT record value created to mark ownership of External-DNS. Ideally this text should be able to identify service/cluster that owns the record
 ```
 
-5. Deploy application with `Httproute` and validate.
+6. Deploy application with `Httproute` and validate.
 
 ## Terraform code for IAM
 Below terraform code will create IAM role with POD ID trust, create POD ID association, and attaches policy allowing DNS modification.
+
 ```bash
 # Pod ID trust policy
 data "aws_iam_policy_document" "podidentity" {
@@ -92,13 +94,11 @@ data "aws_iam_policy_document" "podidentity" {
     ]
   }
 }
-
 # Create IAM role with trust policy
 resource "aws_iam_role" "externaldns_iam_role" {
   name               = "external-dns-controller"
   assume_role_policy = data.aws_iam_policy_document.podidentity.json
 }
-
 # Associate Identity allowing serviceAccount external-dns-controller in NS external-dns
 resource "aws_eks_pod_identity_association" "externaldns" {
   cluster_name    = module.eks.cluster_name
@@ -106,7 +106,6 @@ resource "aws_eks_pod_identity_association" "externaldns" {
   service_account = "external-dns-controller"
   role_arn        = aws_iam_role.externaldns_iam_role.arn
 }
-
 # IAM policy to allow Route53 zone updates
 resource "aws_iam_policy" "external_dns_iam_policy" {
   name = "ExternalDNSControllerIAMPolicy"
@@ -137,7 +136,6 @@ resource "aws_iam_policy" "external_dns_iam_policy" {
     }
   )
 }
-
 # Attach policy to IAM role.
 resource "aws_iam_role_policy_attachment" "externaldns_policy_attachement" {
   role       = aws_iam_role.externaldns_iam_role.name
