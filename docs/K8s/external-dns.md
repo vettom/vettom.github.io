@@ -43,20 +43,20 @@ There are 2 parts to installing and configuring external DNS. In this example, I
 2. Create IAM role `external-dns-controller` with Pod Identity trust policy. 
 ```json
 # Trust policy for Pod Identity service
-data "aws_iam_policy_document" "podidentity" {
-  statement {
-    effect = "Allow"
-
-    principals {
-      type        = "Service"
-      identifiers = ["pods.eks.amazonaws.com"]
-    }
-
-    actions = [
-      "sts:AssumeRole",
-      "sts:TagSession"
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "pods.eks.amazonaws.com"
+            },
+            "Action": [
+                "sts:TagSession",
+                "sts:AssumeRole"
+            ]
+        }
     ]
-  }
 }
 ```
 3. Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
