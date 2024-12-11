@@ -91,7 +91,15 @@ kubectl apply -f example.yaml
 aws s3 ls s3://eks-automation/
 ```
 
-## 
+## Pod Identity vs IAM-RSA comparison
+POD Identity and IAMRSA are two methods that can be used to allow pods to access AWS resources while running on EKS cluster. Pod Identity is more flexible, can work across clusters, does not require `annotations` to be added to serviceAccount, and enables reuse of IAM policy. This works more like InstanceProfile.
+
+|Pod Identity |IAM RSA|
+|-------------------------| ------------------------------------------------|
+|No external Authentication |Requires OIDC provider to be configured|
+|ServiceAccount name maps to Role|Requires annotation with IAM role ARN|
+|Works across cluster |Maps to single OIDC provider |
+|IAM role can be reused|IAM role created with trust policy and OIDC configuration. |
 
 ## Terraform code 
 Here is an example terraform code that creates role with Trust policy for Pod identity and permission to list s3 buckets. Then role is  associated with namespace and service account.

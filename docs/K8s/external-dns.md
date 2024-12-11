@@ -1,5 +1,8 @@
 # External DNS for K8s
-![External DNS](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/external-dns.png){: style="height:150px;width:150px" align=right }
+![External DNS](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/external-dns.png){: style="height:250px;width:250px" }
+![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/amazon_eks.png){: style="height:200px;width:200px"  }
+![Route53](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/route53.jpg){: style="height:150px;width:150px"  }
+
 
 [External DNS](https://kubernetes-sigs.github.io/external-dns/latest/) is a great tool for automating DNS entries for service exposed externally via Ingress, Service or Gateway API resource.  It supports most common DNS providers, and in this example my domain is configured in AWS Route53 and will be using Envoy Gateway to expose my application externally. 
 
@@ -14,7 +17,7 @@ There are 2 parts to installing and configuring external DNS. In this example, I
 
 ### IAM policy and pod identity
 
-1. Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
+**Step 1.** Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
 ```json
 # IAM policy external_dns_iam_policy allowing DNS updates.
     {
@@ -42,7 +45,7 @@ There are 2 parts to installing and configuring external DNS. In this example, I
       ]
     }
 ```
-2. Create IAM role `external-dns-controller` with Pod Identity trust policy. 
+**Step 2.** Create IAM role `external-dns-controller` with Pod Identity trust policy. 
 ```json
 # Trust policy for Pod Identity service
 {
@@ -61,9 +64,9 @@ There are 2 parts to installing and configuring external DNS. In this example, I
     ]
 }
 ```
-3. Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
-4. Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
-5. Install External DNS using Helm charts with custom values.
+**Step 3.** Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
+**Step 4.** Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
+**Step 5.** Install External DNS using Helm charts with custom values.
 
 ```yaml
 serviceAccount:
@@ -76,9 +79,10 @@ domainFilters:
 txtOwnerId: "eks-demo-cluster"    # TXT record value created to mark ownership of External-DNS. Ideally this text should be able to identify service/cluster that owns the record
 ```
 Install external-dns helm chart using values file above
-`helm install external-dns -n external-dns --create-namespace external-dns/external-dns -f values.yaml`
+`helm install  external-dns  external-dns -n external-dns   --create-namespace --repo https://kubernetes-sigs.github.io/external-dns --version 1.15.0 -f values.yaml`
 
-6. Deploy application with `Httproute` and validate.
+
+**Step 6.** Deploy application with `Httproute` and validate.
 
 ## Terraform code for IAM
 Below terraform code will create IAM role with POD ID trust, create POD ID association, and attaches policy allowing DNS modification.
