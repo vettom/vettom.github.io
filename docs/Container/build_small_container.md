@@ -1,4 +1,5 @@
 # Optimized container build
+![container builder process ](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/container_build.jpg)
 
 Building small container images has several significant advantages, especially for cloud-based and microservices environments. some of them are
 
@@ -76,5 +77,6 @@ If application require data, ideally this can be in a shared volume or mounted a
  - [Dive](https://github.com/wagoodman/dive) A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.
  - [Docker Squash](https://docs.docker.com/reference/cli/docker/image/build/#squash)  `--squash` Once the image is built, this flag squashes the new layers into a new image with a single new layer.
 
- ### Building small container by Google
+### Building small container by Google
+
  <iframe width="560" height="315" src="https://www.youtube.com/embed/wGz_cbtCiEA?si=v_2MCWqta2_cJk7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
