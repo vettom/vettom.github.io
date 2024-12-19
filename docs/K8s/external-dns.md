@@ -97,7 +97,7 @@ helm install  external-dns  external-dns -n external-dns \
 --version 1.15.0 -f ./values.yaml
 ```
 
-**Step 6.** Deploy application with `Httproute` and validate.
+**Step 6.** Deploy application with `Httproute` and validate. Sample application can be found at [aws-eks-terraform/EKS-Cluster-generic/Sample-app](https://github.com/vettom/aws-eks-terraform/blob/main/EKS-Cluster-generic/Sample-app/echoserver-gatewayapi.yaml) repo
 
 ## Terraform code for IAM
 ![terraform](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/terraform.png){: style="height:100px;width:100px"  align="right" }
