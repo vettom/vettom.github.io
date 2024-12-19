@@ -13,7 +13,7 @@ There are 2 parts to installing and configuring external DNS. In this example, I
 1. Create IAM policy and Pod Identity association
 2. Install External-DNS by passing necessary values
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3PiJnm6JhQw?si=HOuCFCOVciC7vTQ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqHzLShLXhs?si=CALijjq1RbGxyu0F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### IAM policy and pod identity
 
