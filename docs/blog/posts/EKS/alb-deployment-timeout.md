@@ -14,7 +14,7 @@ categories:
 ## Scenario
 Eks cluster configured with Application loadbalancer. During deployments, pods become unhealthy in target group for short while and causes brief outage.
 
-![alt text](img/tg-reg.png "target group status"){ width="600" }
+![target group status ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/tg-reg.png){: style="width:600px" }
 
 ## Root cause
 There are 2 possible reasons for this scenario and both must be addressed.

@@ -20,8 +20,8 @@ theme:
     - content.code.select
     - navigation.footer
   language: en
-  logo: img/dv-tec-logo-round2cm.png
-  favicon: img/favicon.png
+  logo: https://vettom-images.s3.eu-west-1.amazonaws.com/logo/dv-tec-logo-round2cm.png
+  favicon: https://vettom-images.s3.eu-west-1.amazonaws.com/logo/favicon.png
   icon:
     repo: fontawesome/brands/github
 

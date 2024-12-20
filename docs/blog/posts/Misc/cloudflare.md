@@ -10,6 +10,9 @@ categories:
 
 # CloudFlare: Partial zone sign-up not allowed (1104) terraform 
 
+![Cloudflare ](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/cloudflare.png){: style="width:200px" }
+![Terraform ](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/terraform.png){: style="width:200px" }
+
 If you are enterprise customer, you can make use of CloudFlare Partial domain setup maintain your own DNS servers. Though name suggests `partial DNS` it is creation of a proxy host and you assign CNAME pointint to it. 
 
 When you try to create partial Zone using terraform provider you may end up with below error message. 
