@@ -17,9 +17,11 @@ There are 2 parts to installing and configuring external DNS. In this example, I
 
 ### IAM policy and pod identity
 
-**Step 1.** Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
+**Step 1.** 
 
-*IAM policy external_dns_iam_policy allowing DNS updates.*
+Create IAM policy with necessary permissions. Note that this policy is open to manage all zones, ideally restrict policy to respective ZoneID.
+
+* IAM policy external_dns_iam_policy allowing DNS updates.
 ```json
     {
       "Version" : "2012-10-17",
@@ -46,9 +48,11 @@ There are 2 parts to installing and configuring external DNS. In this example, I
       ]
     }
 ```
-**Step 2.** Create IAM role `external-dns-controller` with Pod Identity trust policy. 
+**Step 2.** 
 
-*Trust policy for Pod Identity service*
+Create IAM role `external-dns-controller` with Pod Identity trust policy. 
+
+* Trust policy for Pod Identity service
 
 ```json
 {
@@ -67,13 +71,19 @@ There are 2 parts to installing and configuring external DNS. In this example, I
     ]
 }
 ```
-**Step 3.** Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
+**Step 3.** 
 
-**Step 4.** Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
+Attache IAM policy `external_dns_iam_policy` to IAM role `external-dns-controller`
 
-**Step 5.** Install External DNS using Helm charts with custom `values.yaml`.
+**Step 4.** 
 
+Create Pod Identity association for Namespace `external-dns`, ServiceAccount `external-dns-controller`  to the role created.
 
+**Step 5.** 
+
+Install External DNS using Helm charts with custom `values.yaml`.
+
+* *`values.yaml` file*
 ```yaml
 serviceAccount:
   name: external-dns-controller
@@ -103,7 +113,7 @@ helm install  external-dns  external-dns -n external-dns \
 ![terraform](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/terraform.png){: style="height:100px;width:100px"  align="right" }
 Below terraform code will create IAM role with POD ID trust, create POD ID association, and attaches policy allowing DNS modification.
 
-*Pod ID trust policy*
+* *Pod ID trust policy*
 ```bash
 data "aws_iam_policy_document" "podidentity" {
   statement {
