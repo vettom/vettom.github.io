@@ -83,7 +83,7 @@ In EKS create Pod Identity Association for namespace `cert-manager` and service 
 
 **Step 5.**
 
-Install Cert-Manager using Helm chart with custom `values.yaml` file
+Prepare custom `values.yaml` file for Cert-manager
 
 
 * *`values.yaml`*
@@ -111,7 +111,7 @@ helm install  cert-manager cert-manager -n cert-manager  --create-namespace  \
 ```
 **Step 6.**
 
-The first thing you'll need to configure after you've installed cert-manager is an `Issuer` or a `ClusterIssuer`. These are resources that represent certificate authorities (CAs) able to sign certificates in response to certificate signing requests. The `ClusterIssuer` resource is cluster scoped which will be the use case for most users. cert-manager comes with a number of built-in [certificate issuers](https://cert-manager.io/docs/configuration/issuers/), in this example I will be configuring [LetsEncrypt ACME](https://letsencrypt.org/docs/client-options/) provider.
+Once Cert-manager is installed, you'll need to configure `Issuer` or a `ClusterIssuer` to issue certificates. These are resources that represent certificate authorities (CAs) able to sign certificates in response to certificate signing requests. The `ClusterIssuer` resource is cluster scoped which will be the use case for most users. Cert-manager supports many [certificate issuers](https://cert-manager.io/docs/configuration/issuers/), in this example I will be configuring [LetsEncrypt ACME](https://letsencrypt.org/docs/client-options/) provider.
 
 Why not use AWS Cert Authority? : At present AWS only supports `Private Certificate Authority`
 
@@ -185,7 +185,7 @@ Deploy an application with respective HTTP route and validate. A sample app can 
 
 ## Terraform code for IAM role and Pod Identity
 ![terraform](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/terraform.png){: style="height:100px;width:100px"  align="right" }
-```json
+```bash
 # IAM policy to enable DNS record creation and lookup
 resource "aws_iam_policy" "certmanager_iam_policy" {
   name = "CertManagerIAMPolicy"
