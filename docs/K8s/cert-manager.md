@@ -131,7 +131,9 @@ spec:
     solvers:
       - selector:
           dnsZones:
-            - vettom.online  
+            - vettom.online
+            - "*.vettom.online"
+            - "*.prd.vettom.online"
         dns01:
           route53:
             region: eu-west-1
