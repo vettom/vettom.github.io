@@ -106,8 +106,8 @@ serviceAccount:
 
 Install Cert-manager with custom `values.yaml` file.
 ```bash
-helm install  cert-manager cert-manager -n cert-manager  --create-namespace  \
---repo https://charts.jetstack.io/ --version v1.16.2 -f values.yaml
+helm repo add jetstack https://charts.jetstack.io ; helm repo update jetstack
+helm install  cert-manager jetstack/cert-manager -n cert-manager  --create-namespace --version v1.16.2 -f cert-manager/values.yaml
 ```
 **Step 6.**
 
