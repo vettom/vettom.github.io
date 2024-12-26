@@ -16,6 +16,8 @@ There 3 parts to configuring Cert-manager on your Kubernetes cluster. In this ex
 3. Configure **clusterIssuer** or **Issuer** to sign your certificates.
 4. Configure `Ingress`/`Gateway` resource with cert-manager annotation and TLS section.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R1tKtYjFrKk?si=9Kxs8cHEPIRsNq9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Authentication : IAM policy and Pod Identity
 
 **Step 1.** 
