@@ -8,6 +8,7 @@
 
 [Cert-Manager](https://cert-manager.io/) is a powerful and extensible X.509 certificate controller for Kubernetes platforms. It will obtain certificates from a variety of Issuers, both popular public Issuers as well as private Issuers, and ensure the certificates are valid and up-to-date, and will attempt to renew certificates at a configured time before expiry. It also exposes metrics to enable monitoring certificate issues and expiry.
 
+
 ## Configure Cert-manager
 There 3 parts to configuring Cert-manager on your Kubernetes cluster. In this example, I have EKS cluster and domain configured in Route53. So I will configure DNS validation for Certificate issue and signing.  [Lets Encrypt](https://letsencrypt.org/) will provide free certificate independent of cluster provider. Check cert-manager for supported certificate issuers. 
 
@@ -112,6 +113,8 @@ helm repo add jetstack https://charts.jetstack.io ; helm repo update jetstack
 helm install  cert-manager jetstack/cert-manager -n cert-manager  --create-namespace --version v1.16.2 -f cert-manager/values.yaml
 ```
 **Step 6.**
+
+![gateway-certificate](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/gateway-cert.jpg){: style="height:300px;width:300px"  }
 
 Once Cert-manager is installed, you'll need to configure `Issuer` or a `ClusterIssuer` to issue certificates. These are resources that represent certificate authorities (CAs) able to sign certificates in response to certificate signing requests. The `ClusterIssuer` resource is cluster scoped which will be the use case for most users. Cert-manager supports many [certificate issuers](https://cert-manager.io/docs/configuration/issuers/), in this example I will be configuring [LetsEncrypt ACME](https://letsencrypt.org/docs/client-options/) provider.
 
