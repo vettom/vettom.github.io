@@ -1,6 +1,6 @@
 # Cert-manager with LetsEncrypt
 ![cert-manager](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/certmanager.png){: style="height:150px;width:150px" }
-![cert-manager](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/letsencrypt.png){: style="height:150px;width:150px" }
+![ Encrypt](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/letsencrypt.png){: style="height:150px;width:150px" }
 ![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/amazon_eks.png){: style="height:200px;width:200px"  }
 ![Route53](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/route53.jpg){: style="height:150px;width:150px"  }
 
