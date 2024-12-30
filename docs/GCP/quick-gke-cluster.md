@@ -39,4 +39,4 @@ gcloud container clusters get-credentials gke-cluster --zone us-west1-a --projec
     - `Enable Logging`
     - `Enable Cloud Monitoring`
     - `Enable Managed Service for Prometheus`
-    
+        

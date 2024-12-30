@@ -1,12 +1,18 @@
-# A cheat sheet
+# AWS Quick reference
 
-### S3
+## ECR 
+Log on to ECR registry
+```bash
+aws ecr get-login-password --profile labs --region eu-west-1 | podman login --username AWS --password-stdin <account_id>.dkr.ecr.eu-west-1.amazonaws.com    
+```
+
+## S3
 ```bash
 # Calculate S3 size
 aws s3 --region eu-central-1 ls s3://vettom --recursive --human-readable --summarize 
 ```
 
-### MFA
+## MFA
 ```bash
 # List MFA devices
 aws iam list-virtual-mfa-devices | grep -i user

@@ -2,7 +2,7 @@ site_name: vettom.github.io
 site_url: https://vettom.github.io
 repo_url: https://github.com/vettom
 repo_name: Vettom
-copyright: Availability:Best practices:Consistency:Documentation
+copyright: Availability -> Best practices -> Consistency -> Documentation
 theme:
   name: material
   features:
@@ -10,7 +10,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.top
-    - toc.integrate
+    # - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight

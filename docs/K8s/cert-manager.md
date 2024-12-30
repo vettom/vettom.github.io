@@ -190,6 +190,7 @@ spec:
 
 Deploy an application with respective HTTP route and validate. A sample app can be found in repo [aws-eks-terraform/EKS-Cluster-generic/Sample-app](https://github.com/vettom/aws-eks-terraform/blob/main/EKS-Cluster-generic/Sample-app/cert-gatewayapi.yaml)
 
+-----------------
 ## Terraform code for IAM role and Pod Identity
 ![terraform](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/terraform.png){: style="height:100px;width:100px"  align="right" }
 ```bash
