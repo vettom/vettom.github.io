@@ -3,7 +3,7 @@ Amazon Elastic Container Registry (ECR) is a fully managed container registry th
 
 In this example, we will create an ECR repo on account A and will configure access from Account B.
 
-**Step 1.**
+**Configuration.**
 
 Create new ECR registry in Account A, and then edit permissions.
 
@@ -34,6 +34,11 @@ Add following Json policy, updating Aws Account ID
 Permission summary
 ![ECR permission summary ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/ecr-permission-summary.png){: style="height:300px;width:600px" }
 
-**Step 2.**
 
-This will allow EKS on  AWS account A to pull image from ECR registry in account B. Policy must be applied to each repository.
+This will allow EKS on  AWS account A to pull image from ECR registry in account B. Policy must be applied to each repository you create.
+
+## Pushing image to ECR
+Log on to ECR repository via Podman/Docker. Once logged in you can push the image
+```bash
+aws ecr get-login-password --region eu-west-2 | podman login --username AWS --password-stdin <aws account id>.dkr.ecr.eu-west-2.amazonaws.com
+```
