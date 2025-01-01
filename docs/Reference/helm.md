@@ -46,6 +46,6 @@ helm create myapp .
 # Creates a tar.gz package of myapp
 helm package myapp   
 # Generate index for hosting in github pages or any other http server
-helm repo index --url https://vettom.github.io/demohelmrepo/ --merge index.yaml .  
+helm repo index --url https://vettom.pages.dev/demohelmrepo/ --merge index.yaml .  
 
 ```

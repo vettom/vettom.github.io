@@ -1,12 +1,12 @@
 # Build container Mac ARM
 
-This document will explain how to build containers on you Silicon Mac using [Podman](https://vettom.github.io/Container/podman/#build-and-run-pod). Publishing containers to Dockerhub/Github repo, also building containers that are X86 compatible
+This document will explain how to build containers on you Silicon Mac using [Podman](https://vettom.pages.dev/Container/podman/#build-and-run-pod). Publishing containers to Dockerhub/Github repo, also building containers that are X86 compatible
 
 ### Architecture
 Building and running containers and running them on cloud comes with some challenges. To start  with most container orchestrations are build on X86 servers, though there are more services starting to offer ARM servers. [AWS Graviton](https://aws.amazon.com/pm/ec2-graviton/?trk=b65f25fa-06a7-4db5-ad82-b3038b0f87ff&sc_channel=ps&ef_id=Cj0KCQiAire5BhCNARIsAM53K1j3y6IA1rNhjAmFD0QjvOYHxGwKJITX8KuX7zydy5WC7Lf2Lr1s8NUaAoxuEALw_wcB:G:s&s_kwcid=AL!4422!3!581117978349!e!!g!!aws%20graviton!13377830137!131827885183&gclid=Cj0KCQiAire5BhCNARIsAM53K1j3y6IA1rNhjAmFD0QjvOYHxGwKJITX8KuX7zydy5WC7Lf2Lr1s8NUaAoxuEALw_wcB) instances are ARM based, and [Karpenter autoscaler](https://karpenter.sh/) on EKS supports provisioning of Graviton instances. Another thing to consider is when you build and push the container to the registry for Deployments. If you are on Silicon Mac, by default container is built for ARM architecture. You must make sure to specify architecture during build process if intending to build X86 compatible containers.
 
 ### Tooling Podman
-Docker containers are licensed product if you are trying to install on Business desktop. A good alternative is to use [Podman](https://vettom.github.io/Container/podman/#build-and-run-pod) which is compatible with other OCI compliant container formats including Docker. It is lightweight, secure and Opensource.
+Docker containers are licensed product if you are trying to install on Business desktop. A good alternative is to use [Podman](https://vettom.pages.dev/Container/podman/#build-and-run-pod) which is compatible with other OCI compliant container formats including Docker. It is lightweight, secure and Opensource.
 
 ## Build container (X86 Architecture)
 

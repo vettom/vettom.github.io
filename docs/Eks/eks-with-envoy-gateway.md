@@ -76,7 +76,7 @@ spec:
         namespaces:
           from: All
     # - name: https
-    #   hostname: "mygateway.vettom.github.io"
+    #   hostname: "mygateway.vettom.pages.dev"
     #   port: 443
     #   protocol: HTTPS
     #   allowedRoutes:
@@ -105,8 +105,8 @@ spec:
       sectionName: http
       namespace: gateway
   hostnames:
-    - mygateway.vettom.github.io
-    - mygateway1.vettom.github.io
+    - mygateway.vettom.pages.dev
+    - mygateway1.vettom.pages.dev
   rules:
     - backendRefs:
         - kind: Service

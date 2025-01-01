@@ -152,7 +152,7 @@ spec:
 
 Create Gateway resource with cert-manager annotation and TLS section. Below example configures gateway to listen for http and https traffic. HTTPS traffic is defined with wildcard domain name `*.vettom.online` and cert-manager annotation added to Gateway itself. Issued certificate will be stored in secret called `mygateway-cert` in namespace `gateway`.
 
-Sample Gateway app can be found in my repo [aws-eks-terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-generic/ext-gateway). To learn more about configuring Gateway API check [https://vettom.github.io/Eks/eks-cluster-karpenter/](https://vettom.github.io/Eks/eks-cluster-karpenter/)
+Sample Gateway app can be found in my repo [aws-eks-terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-generic/ext-gateway). To learn more about configuring Gateway API check [https://vettom.pages.dev/Eks/eks-cluster-karpenter/](https://vettom.pages.dev/Eks/eks-cluster-karpenter/)
 
 ```yaml
 apiVersion: gateway.networking.k8s.io/v1
