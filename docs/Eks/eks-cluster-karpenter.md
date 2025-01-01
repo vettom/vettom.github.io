@@ -1,5 +1,5 @@
 # EKS with Karpenter Autoscaling (v1beta)
-
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 > Refer updated V1 version [EKS with Karpenter Autoscaling V1](https://vettom.pages.dev/Eks/eks-cluster-karpenterV1/)
 
 Karpenter Autoscaling is a great choice when it comes scaling EKS cluster. It is very cost efficient, quick and does not have the limitations of cluster autoscaler.

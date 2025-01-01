@@ -1,4 +1,5 @@
 # EKS Pod identity
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ![EKS logo ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
 Applications in a Pod’s containers can use an AWS SDK or the AWS CLI to make API requests to AWS services using AWS Identity and Access Management (IAM) permissions. Applications must sign their AWS API requests with AWS credentials. Until recently IAM RSA using OpenID connect was used to provide authentication mechanism for the pods. 
 

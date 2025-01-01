@@ -1,5 +1,5 @@
 # Complete EKS cluster [Terraform]
-
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks_logo.jpg){: style="height:100px;width:100px" align=right }
 
 Getting started with creating a functional EKS cluster from scratch can be challenging as requires some specific settings. While EKS module will create a new cluster, it does not address how you will expose an application, tags required for subnets, number of pod IP addresses etc

@@ -7,6 +7,7 @@ categories:
   - observability
 ---
 # Performance / Load testing types 
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 There are four  common performance testing techniques.Each of these techniques achieve different results, which will help to determine how a system performs in terms of responsiveness and stability, as well as whether various attributes of the application adhere to the product specification.
 
 ![Performance test](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/performance_test.jpg){: style="height:200px;width:250px" align=right}

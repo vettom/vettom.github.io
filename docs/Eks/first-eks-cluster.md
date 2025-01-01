@@ -1,4 +1,5 @@
 # EKS cluster build
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ![EKS design document ](https://vettom-images.s3.eu-west-1.amazonaws.com/aws/eks-design-basic.png){: style="height:300px;width:400px" align=right }
 Building EKS cluster can be complex as it has many pre-requisites and make use of many technologies and add-ons. In this document, I will walkthrough all the steps necessary to spin up a newEKS cluster using official terraform modules. Complete terraform code is available in my Git repo [aws-eks-terraform](https://github.com/vettom/aws-eks-terraform/tree/main/EKS-Cluster-ALB).  [Link video](https://www.youtube.com/watch?v=EAz6ap4pm6Y)
 

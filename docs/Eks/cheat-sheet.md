@@ -1,5 +1,5 @@
 # A Cheat sheet
-
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ### Eks kube config
 Update kubeconfig file with AWS EKS cluster credentials
 ```bash

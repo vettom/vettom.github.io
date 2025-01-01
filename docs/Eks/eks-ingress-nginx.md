@@ -1,4 +1,5 @@
 # EKS cluster and Ingress-NGINX
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ![Ingress Nginx ](https://vettom-images.s3.eu-west-1.amazonaws.com/kubernetes/ingress-nginx.png){: style="height:100px;width:100px" align=right }
 
 [Ingress-Nginx](https://github.com/kubernetes/ingress-nginx) is a popular Reverse Proxy and Loadbalancer. In this example, I will demonstrate complete EKS cluster with ingress controller and Sample app to verify installation.

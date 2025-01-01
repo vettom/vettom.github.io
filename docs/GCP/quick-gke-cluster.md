@@ -1,5 +1,5 @@
 # Low cost Single node GKE cluster 
-
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ## Quick cheap GKE cluster with Gcloud command.(About $0.11 per hour)
 While experimenting with GKE cluster, we need to keep cost to minimum. By default Google prompts you to create `Autopilot cluster` which is regional, which means minimum 3 nodes. By switching to `Classic` mode you will be able to create Zonal cluster with single node, and make use of `Pre-emptible` VM's to reduce cost. You can also turn off logging and monitoring options unless required.
 

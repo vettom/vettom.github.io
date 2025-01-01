@@ -1,6 +1,5 @@
-# vettom.pages.dev
 
-# [Visit https://vettom.pages.dev](https://vettom.pages.dev)
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 
 ## Karpenter Autoscaling configuration
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TztGj7lL9o4?si=Ck5HWyI2kKwB8yBr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

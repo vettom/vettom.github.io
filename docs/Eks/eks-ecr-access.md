@@ -1,4 +1,5 @@
 # EKS deploy from ECR
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 Amazon Elastic Container Registry (ECR) is a fully managed container registry that makes it easy to store, manage, share, and deploy your container images and artifacts anywhere. Configuring EKS to access to ECR in local account is usually via IAM role attached to instance profile. However in scenarios when EKS and ECR are configured in different account, some additional configuration is required.
 
 In this example, we will create an ECR repo on account A and will configure access from Account B.

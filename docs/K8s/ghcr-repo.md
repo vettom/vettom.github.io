@@ -1,5 +1,5 @@
 # GitHub Container Registry with Kubernetes
-
+# Site moved to [https://vettom.pages.dev](https://vettom.pages.dev)
 ![GHCR logo](https://vettom-images.s3.eu-west-1.amazonaws.com/generic/ghcr.png){: style="height:100px;width:100px" align=right }
 
 Github provides an OCI standard container registry allowing users and organizations to store container images. A Github  access token to publish, install, and delete packages, also token is required to pull private image in to Kubernetes.
