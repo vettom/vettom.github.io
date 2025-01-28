@@ -1,0 +1,8 @@
+{
+  "error": "",
+  "result": [
+    "https://google.co.uk",
+    "thisshouldfail.com",
+    "gitlab.com"
+  ]
+}
